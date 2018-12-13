@@ -1,3 +1,4 @@
+
 .intro, #works {
   padding-top: 2%;
   padding-bottom: 2%;
@@ -14,24 +15,8 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-/*
-#header {
-  top: 0px;
-  width: 100%;
-  overflow: hidden;
-  position: fixed;
-  z-index: 4000;
-}
-
-#header, #header-name {
-  background-color: #f1f1f1;
-  color: #181818;
-  z-index: 5000;
-}
-*/
-
 #underheader-text {
-  font-size: 40px;
+  font-size: 47px;
   margin-right: 10%;
   margin-top: 20%;
   margin-bottom: 20%;
@@ -50,4 +35,9 @@ a {
 .even-row {
   background-color: #181818;
   color: #F7F7F7;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
 }
