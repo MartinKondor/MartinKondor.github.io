@@ -30,6 +30,12 @@ body {
 
 a {
   color: #6c81d2;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+a, a:hover, a:visited, a:link, a:active {
+   text-decoration: none;
 }
 
 .even-row {
@@ -41,3 +47,4 @@ ul {
   text-align: center;
   list-style-position: inside;
 }
+
