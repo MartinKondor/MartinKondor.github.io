@@ -24,75 +24,104 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+    #bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-attachment: fixed;
+      background-image: url("img/bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.04;
+      filter: alpha(opacity=4);
+    }
+
+    body {
+      background-color: #EDEDED;
+      font-family: "Nunito", sans-serif;
+      color: #181818;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    #underheader-text {
+      margin-top: 11%;
+    }
+
+    a {
+      color: #B81014;
+      transition: all 0.618s linear;
+      text-decoration: none;
+    }
+
+    a, a:hover, a:visited, a:link, a:active {
+       text-decoration: none;
+    }
+
+  </style>
+  
+  <script>
+    let easter_egg_counter = 0;
+    
+    function easter_egg() {
+        easter_egg_counter++;
+        if (easter_egg_counter == 4) {
+            window.open("https://youtu.be/HgzGwKwLmgM", '_blank').focus();
+            easter_egg_counter = 0;
+        }
+    }
+  </script>
   
 </head>
 <body>
 
 <div class="container-fluid">
+  <div id="bg"></div>
+
   <div class="row">
     <div class="col-xs-12 text-right">
       <h1 id="underheader-text">
+        
+          <p class="text-center" style="font-size:89px; padding-bottom: 34px;  color:#000">
+            AI Researcher
+          </p>
       
-		  <p style="font-size:45px;">
-			Martin Kondor,
+		  <p class="text-center" style="font-size:55px; color:#555555;">
+			Martin Kondor
 		  </p>
           
-          Artificial Intelligence Researcher.<br/>
-          
-		  <p class="text-left" style="font-size:30px; padding-top: 12px; color: #777777;">
-			Born to solve intelligence.
+		  <p class="text-center" style="font-size:21px; padding-top: 34px; color:#898989;">
+			Born to solve intelligence
 		  </p>
           
 	  </h1>
     </div>
   </div>
-  
-  <div id="works" class="row even-row py-5">
-    <div class="col-xs-12 text-center">
-      <h1 style="font-size:29px">On the web</h1>
+
+  <div class="row" style="padding-top: 13%; padding-bottom: 0%;">
+    <div class="col-xs-4" style="font-size:34px;">
+       <a title="GitHub" href="https://github.com/MartinKondor"> <i class="fab fa-github"></i></a>
+	   <a title="CodeWars" href="https://www.codewars.com/users/MartinKondor"> <i class="fas fa-code"></i></a>
+	   <a title="Quora" href="https://www.quora.com/profile/Martin-Kondor"> <i class="fab fa-quora"></i></a>
+	   <a title="Twitter" href="https://twitter.com/MartinKondor"> <i class="fab fa-twitter"></i></a>
+	   <a title="CodePen" href="https://codepen.io/martinkondor/"> <i class="fab fa-codepen"></i></a>
+       <a title="FreeCodeCamp" href="https://www.freecodecamp.org/martinkondor"> <i class="fab fa-free-code-camp"></i></a>
+    </div>
+    <div class="col-xs-4 text-center pt-5">
+        <p style="color: #909090; bottom: 0px;" onclick="easter_egg()">Copyright &copy; 2019 Martin Kondor</p>
+    </div>
+    <div class="col-xs-4 text-right" style="font-size:29px;">
+        <a href="mailto:martinkondor@gmail.com">martinkondor@gmail.com</a>
     </div>
   </div>
-  
-  <div class="row even-row py-5">
-    <div style="font-size:77px;" class="col-xs-12 text-center logos">
-       <a href="https://github.com/MartinKondor"> <i class="fab fa-github"></i></a>
-	   <a href="https://www.codewars.com/users/MartinKondor"> <i class="fas fa-code"></i></a>
-	   <a href="https://www.quora.com/profile/Martin-Kondor"> <i class="fab fa-quora"></i></a>
-	   <a href="https://twitter.com/MartinKondor"> <i class="fab fa-twitter"></i></a>
-	   <a href="https://codepen.io/martinkondor/"> <i class="fab fa-codepen"></i></a>
-       <a href="https://www.freecodecamp.org/martinkondor"> <i class="fab fa-free-code-camp"></i></a>
-    </div>
-  </div>
-  
-  <!-- Web based works
-  <div class="row even-row py-5">
-	<div class="col-xs-12 text-center">
-		<h2 style="font-size:23px">Some of my works</h2>
-	</div>
-	<div class="col-xs-12 text-center" style="font-size:19px;">
-		<a href="http://epollo.herokuapp.com/stories">Epollo</a></p>
-		<a href="http://inconnect-beta.herokuapp.com/login">InConnect</a>
-	</div>
-  </div>
-  -->
-	
-  <div class="row intro py-5">
-    <div class="col-xs-12 text-center">
-      <h1 style="font-size: 29px; padding-top: 149px;">
-      
-        Contact<br/><br/>
-        
-        <a href="mailto:martinkondor@gmail.com">martinkondor@gmail.com</a><br/>
-      </h1>
-    </div>
-  </div>
-  
-  <div class="row pt-5 footer">
-    <div class="col-xs-12 text-center">
-      <p style="color: #020202; bottom: 0px;">Copyright &copy; 2019 Martin Kondor</p>
-    </div>
-  </div>
+    
 </div>
 </body>
 </html>
