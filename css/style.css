@@ -1,36 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 .intro, #works {
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
-.row {
-  color: #181818;
-  text-shadow: 0px 0px 50px #181818;
-}
-
 body {
-  background: url("../img/brain.jpg") no-repeat center center fixed;
+  /*background: url("../img/brain.jpg") no-repeat center center fixed;*/
+  background-color: #EDEDED;
   background-size: cover;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Nunito", sans-serif;
+  color: #181818;
 }
 
 #underheader-text {
-  font-size: 51px;
-  margin-right: 10%;
+  font-size: 52px;
+  color: #181818;
+  margin-left: 2%;
+  margin-right: 2%;
   margin-top: 20%;
   margin-bottom: 20%;
-  color: #F7F7F7;
-  text-shadow: 0px 0px 5px #181818, 0px 0px 11px #181818, 0px 0px 10px #181818, 0px 0px 20px #181818, 0px 0px 30px #181818, 0px 0px 40px #181818;
+  /*color: #F7F7F7;*/
+  /*text-shadow: 0px 0px 5px #181818, 0px 0px 11px #181818, 0px 0px 10px #181818, 0px 0px 20px #181818, 0px 0px 30px #181818, 0px 0px 40px #181818;*/
 }
 
-.intro {
-  background-color: #F5F5F5;
+.footer, .intro, .even-row {
+    background-color: #EDEDED;
 }
 
 a {
-  color: #6c81d2;
-  transition: all 0.2s linear;
+  color: #B81014/*#6c81d2*/;
+  transition: all 1.618s linear;
   text-decoration: none;
 }
 
@@ -38,10 +38,6 @@ a, a:hover, a:visited, a:link, a:active {
    text-decoration: none;
 }
 
-.even-row {
-  background-color: #181818;
-  color: #F7F7F7;
-}
 
 ul {
   text-align: center;
