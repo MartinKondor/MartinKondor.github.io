@@ -64,6 +64,31 @@
     a, a:hover, a:visited, a:link, a:active {
        text-decoration: none;
     }
+    
+    @media all and (max-width: 1200px) { 
+        #underheader-text {
+            font-size: 55px !important;
+        }
+        #bottom {
+            font-size: 21px !important;
+        }
+    }
+    @media all and (max-width: 1000px) {
+        #underheader-text {
+            font-size: 34px !important;
+        }
+        #bottom {
+            font-size: 21px !important;
+        }
+    }
+    @media all and (max-width: 500px) {
+        #underheader-text {
+            font-size: 21px !important;
+        }
+        #bottom {
+            font-size: 13px !important;
+        }
+    }
 
   </style>
   
@@ -105,8 +130,8 @@
     </div>
   </div>
 
-  <div class="row" style="padding-top: 13%; padding-bottom: 0%;">
-    <div class="col-xs-4" style="font-size:34px;">
+  <div class="row" style="padding-top: 13%; padding-bottom: 0%; bottom: 0%">
+    <div id="bottom" class="col-xs-4" style="font-size:34px;">
        <a title="GitHub" href="https://github.com/MartinKondor"> <i class="fab fa-github"></i></a>
 	   <a title="CodeWars" href="https://www.codewars.com/users/MartinKondor"> <i class="fas fa-code"></i></a>
 	   <a title="Quora" href="https://www.quora.com/profile/Martin-Kondor"> <i class="fab fa-quora"></i></a>
@@ -115,7 +140,7 @@
        <a title="FreeCodeCamp" href="https://www.freecodecamp.org/martinkondor"> <i class="fab fa-free-code-camp"></i></a>
     </div>
     <div class="col-xs-4 text-center pt-5">
-        <p style="color: #909090; bottom: 0px;" onclick="easter_egg()">Copyright &copy; 2019 Martin Kondor</p>
+        <p style="color: #909090;" onclick="easter_egg()">Copyright &copy; 2019 Martin Kondor</p>
     </div>
     <div class="col-xs-4 text-right" style="font-size:29px;">
         <a href="mailto:martinkondor@gmail.com">martinkondor@gmail.com</a>
