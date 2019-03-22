@@ -5,73 +5,229 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Martin Kondor, Artificial Intelligence Researcher." />
+  <meta name="description" content="Martin Kondor, Artificial Intelligence Engineer." />
   <meta name="application-name" content="Martin Kondor" />
   <meta name="keywords" content="martinkondor,martin kondor,artificial intelligence,ai,agi,neural networks,researcher,engineer,website,developer,programer,programing,software" />
-  <meta name="description" content="Martin Kondor, Artificial Intelligence Researcher." />
+  <meta name="description" content="Martin Kondor, Artificial Intelligence Engineer." />
   <link rel="canonical" href="https://martinkondor.github.io/" />
   <meta property="og:url" content="https://martinkondor.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Martin Kondor" />
-  <meta property="og:description" content="Martin Kondor, Artificial Intelligence Researcher." />
-  <title>Martin Kondor - AI Researcher</title>
+  <meta property="og:description" content="Martin Kondor, Artificial Intelligence Engineer." />
+  <title>Martin Kondor - AI Engineer</title>
   <link rel="shortcut icon" href="img/icon.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Nunito:200,400');
+     @import url('https://fonts.googleapis.com/css?family=Lato:400,900|Raleway');
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
-      background-color: #070707;
-      color: #EDEDED;
-      font-family: "Nunito", sans-serif;
-      padding-left: 2%;
-      padding-right: 2%;
+      background-color: #EDEDED;
+      color: #070707;
+      font-family: "Lato", sans-serif;
+      font-size: 30px;
     }
 
     a {
-      color: #B81014;
-      transition: all 2s linear;
-      text-decoration: none;
+      text-shadow: 1px 1px 5px #AFAFAF;
+      color: rgb(100, 100, 150);
+      transition: all 1s linear;
+      text-decoration: none !important;
     }
 
-    a, a:hover, a:visited, a:link, a:active {
-       text-decoration: none;
+    #main-title {
+      font-family: "Raleway", "Lato", sans-serif !important;
+      font-size: 72px;
     }
-  </style>  
+
+    .sub-title {
+      font-size: 25px;
+    }
+
+    .sub-sub-title {
+      font-size: 14px;
+    }
+
+    .nav-link {
+      font-size: 18px;
+    }
+
+    .fill {
+      background-color: #171717;
+    }
+
+    .huge-down-margin {
+      margin-bottom: 30vh;
+    }
+
+    #about, #portfolio, #contact {
+      font-size: 18px;
+    }
+
+    .social-link {
+      font-size: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-shadow: none !important;
+    }
+
+    #portfolio a, a .btn-link {
+      text-shadow: none !important;
+    }
+
+    #about {
+      margin-left: 20vw;
+      margin-right: 20vw;
+    }
+
+    @media screen and (max-width: 920px) {
+      #about {
+        margin-left: 0vw !important;
+        margin-right: 0vw !important;
+      }
+
+      #main-title {
+        font-size: 50px;
+      }
+    }
+
+    .footer {
+      font-size: 12px !important;
+    }
+
+  </style>
 </head>
 <body>
+
 <div class="container-fluid">
+
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="position: fixed;">
+    <a class="navbar-brand" href="#main-title" title="Martin Kondor" alt="Martin Kondor">
+        <h1 class="font-weight-bold">Martin Kondor</h1>
+    </a>
+    <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item mr-2"><a class="btn btn-link nav-link" href="#about"> About</a></li>
+            <li class="nav-item mr-2 ml-2"><a class="btn btn-link nav-link" href="#portfolio"> Portfolio</a></li>
+            <li class="nav-item ml-2"><a class="btn btn-link nav-link" href="#contact"> Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="huge-down-margin"></div>
+
   <div class="row">
-    <div class="col-xs-12 text-center pt-5">
-        <h1 class="h1 font-weight-bold" style="font-size: 12vw;">Martin Kondor</h1>
+    <div class="col-sm-12 text-center">
+        <p class="sub-sub-title text-muted">
+            I am the
+        </p>
     </div>
   </div>
+
   <div class="row">
-    <div class="col-xs-12 text-center pb-5">
-        <h1 class="h5" style="font-size: 5vw; color: rgb(122, 122, 122); font-weight: 200;">
-            AI Researcher,
-            <br>
-            Born to solve intelligence.
-        </h1>
+    <div class="col-sm-12 text-center">
+        <p id="main-title">
+            Machine Learning Engineer
+        </p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12 text-center py-5" style="font-size: 14vh; bottom: 0;">
-       <a title="Email" class="mr-4" href="mailto:martinkondor@gmail.com"> <i class="fas fa-at"></i>
-       <a title="GitHub" href="https://github.com/MartinKondor"> <i class="fab fa-github"></i></a>
-       <a title="Kaggle" class="ml-4" href="https://www.kaggle.com/martinkondor"> <i class="fab fa-kaggle"></i></a>
-       <br>
-	   <a title="CodeWars" href="https://www.codewars.com/users/MartinKondor"> <i class="fas fa-code"></i></a>
-       <a title="CodePen" href="https://codepen.io/martinkondor/"> <i class="fab fa-codepen"></i></a>
-       <a title="FreeCodeCamp" href="https://www.freecodecamp.org/martinkondor"> <i class="fab fa-free-code-camp"></i></a>
-       <br>
-       <a title="Quora" class="ml-5 mr-5" href="https://www.quora.com/profile/Martin-Kondor"> <i class="fab fa-quora"></i></a>
-       <a title="Twitter" class="ml-5 mr-5" href="https://twitter.com/MartinKondor"> <i class="fab fa-twitter"></i></a>    
-     </div>
+
+  <div class="row huge-down-margin">
+    <div class="col-sm-12 text-center">
+        <p class="sub-sub-title text-muted">
+            who was born to solve intelligence.
+        </p>
+    </div>
   </div>
+
+  <div class="row pb-5 pt-2">
+    <div class="col-sm-12 text-center">
+      <p class="h1 font-weight-bold">ABOUT</p>
+    </div>
+  </div>
+  <div class="row pb-5">
+    <div class="col-sm-12 text-center">
+      <p id="about" class="text-left">
+        Nice to meet you! I am Martin Kondor.
+        <br><br>
+        I love computers since my childhood,
+        the idea of Artificial Intelligence made me work and learn harder than I ever did in my whole life.
+        <br><br>
+        Implied from this I am lifelong learner, normally I read 1 book/week about AI,
+        life management, business or rarely some kind of a novel.
+        I always try to spend all of my free time to learn something.
+        <br><br>
+        You can see, I am motivated, and I am shooting for one goal: <strong title="Artificial General Intelligence">AGI</strong>.
+        <br><br>
+        My appearance on the internet:
+      </p>
+      <a title="GitHub" href="https://github.com/MartinKondor" class="social-link"> <i class="fab fa-github"></i></a>
+      <a title="Kaggle" href="https://www.kaggle.com/martinkondor" class="social-link"> <i class="fab fa-kaggle"></i></a>
+      <a title="CodeWars" href="https://www.codewars.com/users/MartinKondor" class="social-link"> <i class="fas fa-code"></i></a>
+      <a title="Quora" href="https://www.quora.com/profile/Martin-Kondor" class="social-link"> <i class="fab fa-quora"></i></a>
+      <a title="Twitter" href="https://twitter.com/MartinKondor" class="social-link"> <i class="fab fa-twitter"></i></a>
+      <!--
+      <a title="Email" href="mailto:martinkondor@gmail.com" class="noshadow"> <i class="fas fa-at"></i>
+      <a title="CodePen" href="https://codepen.io/martinkondor/" class="social-link"> <i class="fab fa-codepen"></i></a>
+      <a title="FreeCodeCamp" href="https://www.freecodecamp.org/martinkondor" class="social-link"> <i class="fab fa-free-code-camp"></i></a>
+      -->
+    </div>
+  </div>
+
+  <div class="row fill pb-5 pt-2">
+    <div class="col-sm-12 text-center">
+      <p class="h1 font-weight-bold text-white">PORTFOLIO</p>
+    </div>
+  </div>
+  <div class="row fill pb-5">
+    <div class="col-sm-12 text-center">
+      <div id="portfolio" class="text-muted">
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <a href="https://github.com/MartinKondor/MachineLearning">
+              <img src="img/ml.png" width="300" alt="3D plot" title="Collection of Machine Learning notebooks">
+              <p class="mt-4">Collection of Machine Learning notebooks</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="row pb-5 pt-2">
+    <div class="col-sm-12 text-center">
+      <p class="h1 font-weight-bold">CONTACT</p>
+      <a href="mailto:martinkondor@gmail.com">
+        <p class="h1 font-weight-bold">
+          Feel free to write me an email!
+        </p>
+        <p class="small font-weight-thin">
+          martinkondor@gmail.com
+        </p>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <a class="btn btn-secondary btn-link" href="#"><i class="fas fa-chevron-circle-up"> Go up</i></a>
+    </div>
+  </div>
+
+  <div class="row footer">
+    <div class="col-sm-12 text-center">
+      <p class="text-muted">Copyright &copy; 2019 Martin Kondor</p>
+    </div>
+  </div>
+
 </div>
+
 </body>
 </html>
