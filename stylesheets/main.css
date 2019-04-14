@@ -1,0 +1,92 @@
+/*http://paletton.com/#uid=3010u0keNt85sM+9WAwjPnZoBj8*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*
+    background-color: rgb(252, 252, 252);
+    color: #080808;
+    */
+    color: rgb(252, 252, 252) !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    overflow-x: hidden;
+}
+
+html, body {
+    background: rgb(152, 38, 35);
+    background: -moz-linear-gradient(135deg, rgba(152,38,35,1) 0%, rgba(119,169,171,1) 50%, rgba(233,247,205,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(152,38,35,1) 0%, rgba(119,169,171,1) 50%, rgba(233,247,205,1) 100%);
+    background: linear-gradient(135deg, rgba(152,38,35,1) 0%, rgba(119,169,171,1) 50%, rgba(233,247,205,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#982623",endColorstr="#e9f7cd",GradientType=1); 
+}
+
+a {
+    color: #4C898C;
+    transition: all 1s linear;
+    text-decoration: none !important;
+}
+
+#main-title {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.sub-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sub-sub-title {
+    font-size: 14px;
+    color: rgba(252, 252, 252, 0.5)
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.huge-down-margin {
+    padding-bottom: 29vh;
+}
+
+#about, #portfolio, #contact {
+    font-size: 21px;
+}
+
+.social-link {
+    font-size: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#about {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.work-img {
+    border-radius: 10%;
+    width: 450px;
+    height: auto;
+    box-shadow: 5px 5px 5px #4C898C;
+}
+
+@media screen and (max-width: 920px) {
+
+    #about {
+        margin-left: 0vw !important;
+        margin-right: 0vw !important;
+    }
+
+    #main-title {
+        font-size: 50px;
+    }
+}
+
+.footer {
+    font-size: 12px;
+}
