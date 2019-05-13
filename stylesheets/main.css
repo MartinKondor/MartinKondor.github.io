@@ -6,22 +6,19 @@ html {
 }
 
 body {
-    /*
-    background-color: rgb(252, 252, 252);
-    color: #080808;
-    */
-    color: rgb(252, 252, 252) !important;
+    color: rgb(7, 7, 7) !important;
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     overflow-x: hidden;
 }
 
 html, body {
-    background: rgb(152, 38, 35);
-    background: -moz-linear-gradient(135deg, rgba(152,38,35,1) 0%, rgba(119,169,171,1) 50%, rgba(233,247,205,1) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(152,38,35,1) 0%, rgba(119,169,171,1) 50%, rgba(233,247,205,1) 100%);
-    background: linear-gradient(135deg, rgba(152,38,35,1) 0%, rgba(119,169,171,1) 50%, rgba(233,247,205,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#982623",endColorstr="#e9f7cd",GradientType=1); 
+    /* From: https://cssgradient.io/ */
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e0e0e0",GradientType=1);  
 }
 
 a {
@@ -42,7 +39,7 @@ a {
 
 .sub-sub-title {
     font-size: 14px;
-    color: rgba(252, 252, 252, 0.5)
+    color: rgba(12, 12, 12, 0.5);
 }
 
 .nav-link {
@@ -58,32 +55,39 @@ a {
 }
 
 .social-link {
-    font-size: 70px;
+    font-size: 85px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-#about {
+#about,
+#email-me {
     margin-left: 20vw;
     margin-right: 20vw;
 }
 
 .work-img {
-    border-radius: 10%;
+    border-radius: 5%;
     width: 450px;
     height: auto;
-    box-shadow: 5px 5px 5px #4C898C;
+    box-shadow: 9px 10px 20px rgb(153, 153, 153);
 }
 
 @media screen and (max-width: 920px) {
 
-    #about {
+    #about,
+    #email-me {
         margin-left: 0vw !important;
         margin-right: 0vw !important;
     }
 
     #main-title {
-        font-size: 50px;
+        font-size: 50px !important;
+    }
+
+    .work-img {
+        width: 250px !important;
+        height: auto !important;
     }
 }
 

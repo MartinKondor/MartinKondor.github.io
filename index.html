@@ -18,7 +18,6 @@
   <link rel="shortcut icon" href="img/icon.bmp">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel='stylesheet' href='vendor/bootstrap.min.css'>
-  <script src="vendor/bounce.min.js"></script>
   <link rel='stylesheet' href='stylesheets/main.css'>
 </head>
 <body>
@@ -80,9 +79,11 @@
       <p id="about" class="text-left">
         Nice to meet you, I am Martin Kondor.
         <br><br>
+        I live &amp; work in Hungary as a software developer for a local company.
+        I am specialized in Machine Learning and Full Stack Web Development.
+        <br><br>
         I love computers since my childhood,
         the idea of Artificial Intelligence made me work and learn harder than I ever did in my whole life.
-        <br><br>
         Implied from this I am lifelong learner, normally I read 1 book/week about AI,
         life management, business or rarely some kind of a novel.
         I always try to spend all of my free time to learn something.
@@ -103,22 +104,28 @@
       <div id="portfolio" class="text-muted">
 
         <div class="row">
-          <div class="col-sm-6 text-center">
+          <div class="col-sm-6 text-center mt-1">
             <a href="https://github.com/MartinKondor/MachineLearning">
               <img class="work-img" src="img/ml.png" alt="3D plot" title="Collection of Machine Learning notebooks">
-              <p class="mt-4 text-white">Collection of Machine Learning notebooks</p>
+              <p class="mt-4 sub-sub-title">Collection of Machine Learning notebooks</p>
             </a>
           </div>
 
-          <div class="col-sm-6 text-center">
+          <div class="col-sm-6 text-center mt-1">
             <a href="https://dentrit.herokuapp.com">
               <img class="work-img" src="img/dentrit.herokuapp.com.png" alt="3D plot" title="Website for sharing knowledge and fun">
-              <p class="mt-4 text-white">Website for sharing knowledge &amp; fun</p>
+              <p class="mt-4 sub-sub-title">Website for sharing knowledge &amp; fun</p>
+            </a>
+          </div>
+
+          <div class="col-sm-6 text-center mt-1">
+            <a href="https://inconnect-beta.herokuapp.com">
+              <img class="work-img" src="img/inconnect-beta.herokuapp.com.png" alt="3D plot" title="Small social network">
+              <p class="mt-4 sub-sub-title">Small social network</p>
             </a>
           </div>
 
         </div>
-
       </div>
     </div>
   </div>
@@ -138,7 +145,6 @@
       <a title="CodePen" href="https://codepen.io/martinkondor/" class="social-link"> <i class="fab fa-codepen"></i></a>
       <a title="FreeCodeCamp" href="https://www.freecodecamp.org/martinkondor" class="social-link"> <i class="fab fa-free-code-camp"></i></a>
       <br><br>
-      <p>Email:</p>
       <a href="mailto:martinkondor@gmail.com">
         <p class="h4 font-weight-bold">
           martinkondor@gmail.com
@@ -148,16 +154,33 @@
   </div>
 
   <div class="huge-down-margin"></div>
+  <!--Email form-->
+
+  <div id="email-me" class="row pb-5 pt-5">
+    <div class="col-sm-12 text-center">
+        <p class="sub-title">EMAIL ME</p>
+        <form action="mailto:martinkondor@gmail.com" method="GET">
+          <input type="text" name="subject" class="form-control" placeholder="Subject" autocomplete="off">
+          <textarea name="body" class="mt-2 form-control" placeholder="Message" rows="6" autocomplete="off"></textarea>
+          <button type="submit" class="mt-4 btn btn-lg btn-block btn-outline-info"><i class="far fa-envelope"></i> Send</button>
+        </form>
+    </div>
+  </div>
+
+  <div class="huge-down-margin"></div>
   <!--Footer-->
 
   <footer class="row footer">
     <div class="col-sm-12 text-center">
-      <p id="copyright" class="text-muted">Copyright &copy;</p>
+      <p id="copyright" class="text-muted">Copyright &copy; Martin Kondor</p>
     </div>
   </footer>
 
 </div>
 
+<script src="vendor/jquery.min.js"></script>
+<script src="vendor/bounce.min.js"></script>
 <script src="javascripts/main.js"></script>
+
 </body>
 </html>
