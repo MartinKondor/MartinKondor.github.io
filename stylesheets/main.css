@@ -14,11 +14,18 @@ body {
 
 html, body {
     /* From: https://cssgradient.io/ */
-    background: rgb(255,255,255);
+    /*
+	background: rgb(255,255,255);
     background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e0e0e0",GradientType=1);  
+	*/
+	background: rgb(218,236,255);
+	background: -moz-linear-gradient(180deg, rgba(218,236,255,1) 0%, rgba(240,240,240,1) 17%, rgba(233,233,233,1) 93%, rgba(242,242,242,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(218,236,255,1) 0%, rgba(240,240,240,1) 17%, rgba(233,233,233,1) 93%, rgba(242,242,242,1) 100%);
+	background: linear-gradient(180deg, rgba(218,236,255,1) 0%, rgba(240,240,240,1) 17%, rgba(233,233,233,1) 93%, rgba(242,242,242,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daecff",endColorstr="#f2f2f2",GradientType=1);
 }
 
 a {
@@ -38,7 +45,7 @@ a {
 }
 
 .sub-sub-title {
-    font-size: 14px;
+    font-size: 15px;
     color: rgba(12, 12, 12, 0.5);
 }
 
@@ -51,7 +58,7 @@ a {
 }
 
 #about, #portfolio, #contact {
-    font-size: 21px;
+    font-size: 22px;
 }
 
 .social-link {
@@ -67,10 +74,26 @@ a {
 }
 
 .work-img {
-    border-radius: 5%;
-    width: 450px;
+    border-radius: 1%;
+    width: 385px;
     height: auto;
     box-shadow: 9px 10px 20px rgb(153, 153, 153);
+    transition: transform 0.9s ease-in-out;
+    -webkit-transition: transform 0.9s ease-in-out;
+    -moz-transition: transform 0.9s ease-in-out;
+}
+
+.increase-on-hover:hover {
+    transition: transform 1.2s ease-in-out;
+    transform: scale(1.25);
+    -webkit-transition: transform 1.2s ease-in-out;
+    -webkit-transform: scale(1.25);
+    -moz-transition: transform 1.2s ease-in-out;
+    -moz-transform: scale(1.25);
+}
+
+.box-shadow {
+    box-shadow: 1px 2px 20px rgb(109, 109, 109);
 }
 
 @media screen and (max-width: 920px) {
