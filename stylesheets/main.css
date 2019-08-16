@@ -7,7 +7,7 @@ html {
 body {
     color: rgb(7, 7, 7) !important;
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -35,8 +35,9 @@ textarea {
 }
 
 #main-title {
-    font-size: 72px;
+    font-size: 59px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #about,
@@ -49,6 +50,12 @@ textarea {
 #email-me {
     margin-left: 20vw;
     margin-right: 20vw;
+}
+
+#logo {
+    width: 105px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .sub-title {
@@ -66,13 +73,13 @@ textarea {
 }
 
 .huge-down-margin {
-    padding-bottom: 40vh;
+    padding-bottom: 32vh;
 }
 
 .social-link {
-    font-size: 85px;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 80px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .work-img {
