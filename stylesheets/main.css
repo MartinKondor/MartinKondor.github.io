@@ -1,3 +1,8 @@
+/*
+
+Colors: https://paletton.com/#uid=3020u0knGsJeeFAjrvJs3oTuEjM
+
+*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 html {
@@ -11,10 +16,7 @@ body {
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-}
 
-html,
-body {
     /* Generated with: https://cssgradient.io/ */
     background: rgb(218,236,255);
 	background: -moz-linear-gradient(180deg, rgba(218,236,255,1) 0%, rgba(240,240,240,1) 17%, rgba(233,233,233,1) 93%, rgba(242,242,242,1) 100%);
@@ -24,9 +26,14 @@ body {
 }
 
 a {
-    color: #4C898C;
-    transition: all 1s linear;
+    color: #3E929A;
+    transition: all 0.49s linear;
     text-decoration: none !important;
+}
+
+a:focus,
+a:hover {
+    color: #6AB5BC;
 }
 
 input,
@@ -87,18 +94,20 @@ textarea {
     width: 385px;
     height: auto;
     box-shadow: 9px 10px 20px rgb(153, 153, 153);
-    transition: transform 0.9s ease-in-out;
-    -webkit-transition: transform 0.9s ease-in-out;
-    -moz-transition: transform 0.9s ease-in-out;
+    margin-bottom: 10px;
+
+    transition: all 0.9s ease-in-out;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
 }
 
+.increase-on-hover:focus,
 .increase-on-hover:hover {
-    transition: transform 1.2s ease-in-out;
     transform: scale(1.25);
-    -webkit-transition: transform 1.2s ease-in-out;
     -webkit-transform: scale(1.25);
-    -moz-transition: transform 1.2s ease-in-out;
     -moz-transform: scale(1.25);
+    box-shadow: 6px 8px 40px rgb(100, 100, 100);
+    margin-bottom: 33px;
 }
 
 .box-shadow {
