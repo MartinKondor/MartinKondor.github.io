@@ -25,9 +25,15 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daecff",endColorstr="#f2f2f2",GradientType=1);
 }
 
+a,
+button,
+input,
+textarea {
+    transition: all 0.49s linear;
+}
+
 a {
     color: #3E929A;
-    transition: all 0.49s linear;
     text-decoration: none !important;
 }
 
@@ -44,7 +50,6 @@ textarea {
 #main-title {
     font-size: 59px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 #about,
