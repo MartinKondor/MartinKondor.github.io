@@ -18,7 +18,6 @@ body {
     -webkit-font-smoothing: antialiased;
 
     /* Generated with: https://cssgradient.io/ */
-    /* Generated with: https://cssgradient.io/ */
     background: rgb(218,236,255);
 	background: -moz-linear-gradient(180deg, rgba(218,236,255,1) 0%, rgba(240,240,240,1) 17%, rgba(233,233,233,1) 93%, rgba(242,242,242,1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(218,236,255,1) 0%, rgba(240,240,240,1) 17%, rgba(233,233,233,1) 93%, rgba(242,242,242,1) 100%);
@@ -104,7 +103,7 @@ a .btn {
 
 .sub-sub-title {
     font-size: 15px;
-    color: rgba(32, 32, 32, 0.5);
+    color: rgba(37, 37, 37, 0.5);
 }
 
 .nav-link {
@@ -112,11 +111,15 @@ a .btn {
 }
 
 .huge-down-margin {
-    padding-bottom: 32vh;
+    padding-bottom: 30vh;
+}
+
+.bigger-huge-down-margin {
+    padding-bottom: 38vh;
 }
 
 .social-link {
-    font-size: 80px;
+    font-size: 90px;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -139,7 +142,6 @@ a .btn {
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     box-shadow: 6px 8px 40px rgb(100, 100, 100);
-    margin-bottom: 33px;
 }
 
 .box-shadow {
@@ -190,10 +192,10 @@ Backgound
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(222, 42, 37, 0.3);
+    background: rgba(222, 43, 37, 0.171);
     animation: particle-animation 25s linear infinite;
     bottom: -150px;
-    border-radius: 0%;
+    border-radius: 100%;
 }
 
 .circles li:nth-child(1) {
@@ -276,12 +278,10 @@ Backgound
     10% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 10%;
     }
 
     100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
-        border-radius: 100%;
     }
 }
