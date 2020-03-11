@@ -138,9 +138,18 @@ footer {
     -moz-transform: scale(1.35);
 }
 
+.social-link > span {
+    font-size: 30px;
+}
+
+.social-link > i {
+    font-size: 40px;
+}
+
 .social-link {
-    font-size: 70px;
-    margin: 15px 5px 15px 5px;
+    display: block;
+    /*margin: 15px 5px 15px 5px;*/
+    margin-bottom: 17px; 
 }
 
 #fiverr-img,
