@@ -6,6 +6,7 @@
         $('body').css('background-color', 'rgb(0, 0, 34)');
         $('body').css('color', '#fefefe');
         $('#logo').attr('src', 'img/logo.jpg');
+        $('link[rel="icon"]').attr('href', 'img/logo.jpg');
     }
 
     // Change copyright year
