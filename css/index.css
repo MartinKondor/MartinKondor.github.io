@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
+
+html, 
+body {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+a:hover {
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    margin: 20px 50px 20px 50px;
+    padding: 15px;
+}
+
+header, main, footer {
+    z-index: 100 !important;
+}
+
+#name {
+    cursor: pointer;
+    padding-top: 50px;
+    font-size: 49px;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+#clock {
+    margin: 0 auto;
+    color: rgb(122, 22, 22);
+    font-weight: bold;
+}
+
+#bg {
+    font-size: 20px;
+    position: absolute;
+    color: green;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    z-index: 0;
+} 
+
+.unselectable {
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.links {
+    font-size: 22px;
+}
