@@ -1,64 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Bebas+Neue&display=swap');
+
 
 html, 
 body {
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    text-rendering: optimizeLegibility;
+
+    background: rgb(248, 248, 248);
+    color: rgb(37, 37, 37);
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(53, 122, 212);
     text-decoration: none;
-    transition: all 0.5s;
+    transition: all 0.2s ease-in;
 }
 
 a:hover {
-    font-size: 23px;
-    color: rgb(0, 0, 0);
-    background-color:rgb(255, 255, 255);
-    margin: 20px 50px 20px 50px;
-    padding: 15px;
+    color: rgb(213, 228, 248);
+    text-decoration: underline;
 }
 
-header, main, footer {
-    z-index: 100 !important;
+nav, footer {
+    background-color: rgb(0, 0, 34);
 }
 
-#name {
-    cursor: pointer;
-    padding-top: 50px;
-    font-size: 49px;
-    font-family: 'Inconsolata', monospace;
-    text-transform: uppercase;
-    transition: all 0.5s;
-}
-
-#clock {
-    margin: 0 auto;
-    color: rgb(122, 22, 22);
-    font-weight: bold;
-}
-
-#bg {
+.nav-item {
+    margin-right: 14px;
     font-size: 20px;
-    position: absolute;
-    color: green;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-    z-index: 0;
-} 
+}
+
+.navbar {
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+.btn-primary {
+    background-color: rgb(0, 0, 34);
+    transition: all 0.2s ease-in;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: rgb(0, 0, 34);
+    font-family: 'Oswald', sans-serif;
+}
+
+section {
+    padding: 15%;
+    font-size: 18px;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom:0;
+    width:100%;
+    bottom:0;
+    padding: 5px 0;
+    clear: both;
+}
+
+#links {
+    font-size: 50px;
+    margin-right: 15%;
+}
+
+#links > a {
+    margin-right: 25px;
+}
+
+#home,
+#about-me {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home {
+    height: 865px;
+    background-image: url("../img/bgs/home.png");
+}
+
+#about-me {
+    height: 1040px;
+    color: rgba(248, 248, 248, 0.856);
+    background-image: url("../img/bgs/about-me.png");
+}
+
+#about-me > h2 {
+    color: rgb(248, 248, 248);
+}
+
+#skillset {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(0, 0, 34);
+    cursor: default;
+}
+
+#skillset > img {
+    width: 100px;
+}
+
+#skillset > .text-logo,
+#skillset > img,
+#skillset > i {
+    margin: 2%;
+}
+
+.text-logo {
+    background-color: rgb(0, 0, 34);
+    color: rgb(248, 248, 248);
+    padding: 20px;
+}
 
 .unselectable {
-    -webkit-user-select: none;    
-    -moz-user-select: none;
-    -ms-user-select: none; 
     user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
-.links {
-    font-size: 22px;
+@media only screen and (max-width: 1000px) {
+    #home,
+    #about-me {
+        background-image: none;
+        color: rgb(37, 37, 37);
+    }
+    
+    #home {
+        margin-top: 20px;
+        height: 500px;          
+    }
+
+    #links {
+        font-size: 59px !important;
+    }
+
+    #about-me > h2 {
+        height: auto;
+        color: rgb(37, 37, 37);
+    }
+
+    #links {
+        font-size: 75px;
+    }
 }
