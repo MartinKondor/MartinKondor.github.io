@@ -4,6 +4,7 @@
     $('#copyright').html($('#copyright').html() + new String(new Date().getFullYear()));
 
     // Smooth scroll
+    /*
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
     
@@ -11,6 +12,7 @@
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
+    */
 
     // Dark mode
     var darkModeOn = false;

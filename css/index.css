@@ -14,7 +14,6 @@ body {
 
     color: rgb(37, 37, 37);
     font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
 }
 
 a {
@@ -44,7 +43,7 @@ nav, footer {
 
 .btn-primary {
     background-color: rgb(0, 0, 34);
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 h1, h2 {
