@@ -1,18 +1,17 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto&family=Bebas+Neue&display=swap');
 
 
 html, 
 body {
     padding: 0;
     margin: 0;
-    height: 101%;
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
 
     text-rendering: optimizeLegibility;
-
-    color: rgb(37, 37, 37);
+    color: rgb(248, 248, 248);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,12 +22,21 @@ a {
 }
 
 a:hover {
-    color: rgb(213, 228, 248);
+    color: rgb(200, 207, 216);
     text-decoration: underline;
 }
 
 nav, footer {
     background-color: rgb(0, 0, 34);
+}
+
+.project-link {
+    text-decoration: none !important;
+    color: rgb(240, 240, 255);
+}
+
+.project-link:hover {
+    color: rgb(141, 141, 146);
 }
 
 .nav-item {
@@ -48,7 +56,7 @@ nav, footer {
 
 h1, h2 {
     font-weight: 700;
-    color: rgb(0, 0, 34);
+    color: rgb(248, 248, 248);
     font-family: 'Oswald', sans-serif;
 }
 
@@ -70,6 +78,7 @@ footer {
 #links {
     font-size: 50px;
     margin-right: 15%;
+    text-align: right;
 }
 
 #links > a {
@@ -78,6 +87,7 @@ footer {
 
 #home,
 #about-me {
+    background-image: none !important;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -115,12 +125,13 @@ footer {
 #skillset > img,
 #skillset > i {
     margin: 2%;
+    background-color: rgb(200, 200, 234, 0.7);
+    padding: 30px;
 }
 
 .text-logo {
-    background-color: rgb(0, 0, 34);
-    color: rgb(248, 248, 248);
-    padding: 20px;
+    color: rgb(0, 0, 34);
+    font-size: 75px;
 }
 
 .unselectable {
@@ -137,29 +148,40 @@ footer {
     border-radius: 0%;
 }
 
-@media only screen and (max-width: 1000px) {
-    #home,
-    #about-me {
-        background-image: none !important;
-        color: rgb(37, 37, 37) !important;
+@media only screen and (max-width: 1180px) {
+    .project-img {
+        width: 800px !important;
+        margin-bottom: 20px;
     }
-    
+}
+
+@media only screen and (max-width: 1000px) {
+    #about-me {
+        height: 850px !important;
+    }
+
     #home {
-        margin-top: 20px !important;
-        height: 500px !important;          
+        margin-top: 40px !important;
+        height: 500px !important;    
     }
 
     #links {
-        font-size: 59px !important;
+        margin-top: 10%;
+        font-size: 75px !important;
+        text-align: center;
     }
 
     #about-me > h2 {
         height: auto !important;
-        color: rgb(37, 37, 37) !important;
     }
 
-    #links {
-        font-size: 75px !important;
+    #github-trophies {
+        display: none;
+    }
+
+    .project-img {
+        width: 400px !important;
+        margin-bottom: 20px;
     }
 }
 
@@ -174,6 +196,7 @@ Backgound
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: rgb(0, 0, 34);
 }
 
 .bg-particles li {
@@ -183,6 +206,7 @@ Backgound
     width: 20px;
     height: 20px;
     background: rgb(0, 0, 34);
+    background: rgb(20, 20, 54);
     animation: particle-animation 25s linear infinite;
     bottom: -150px;
     border-radius: 0%;

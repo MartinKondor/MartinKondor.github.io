@@ -57,11 +57,6 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li title="Toggle Dark Mode" class="nav-item">
-                            <a id="dark-mode-btn" class="nav-link" href="#">
-                                <i class="fas fa-moon"></i>
-                            </a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -96,7 +91,7 @@
                     <!--<button class="btn btn-primary mt-3">Download Resume</button>-->
                 </div>
 
-                <div id="links" class="text-right unselectable">
+                <div id="links" class="unselectable">
                     <a title="Twitter" href="https://twitter.com/MartinKondor" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a title="GitHub" href="https://github.com/MartinKondor" target="_blank"><i class="fab fa-github"></i></a>
                     <a title="StackOverflow" href="https://stackoverflow.com/users/9160124/martinkondor?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a>
@@ -106,21 +101,23 @@
             </section>
 
             <section id="about-me">
-                <h2>
+                <h2 class="text-center mb-4">
                     About Me
                 </h2>
 
+                <!--
                 <p class="mt-3">
                     Hi, I'm Martin Kondor, a passionate self-taught software &amp; web developer from Hungary, currently learning at the University Of Pannonia.
                 </p>
 
                 <br>
+                -->
 
                 <div class="row">
 
                     <div class="col-sm text-center">
                         <a href="https://github.com/MartinKondor/MartinKondor">
-                            <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MartinKondor&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=000022&hide_border=true" alt="MartinKondor's GitHub Stats" />
+                            <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MartinKondor&hide=Jupyter Notebook&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=000022&hide_border=true" alt="MartinKondor's GitHub Stats" />
                         </a>
                     </div>
                     
@@ -139,7 +136,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div id="github-trophies" class="row">
                     <div class="col-sm text-center mt-4">
                         <p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=MartinKondor&theme=darkhub&column=6" alt="trophy"></a></p>
                     </div>
@@ -148,7 +145,7 @@
             </section>
 
             <section id="skills">
-                <h2>
+                <h2 class="text-center mb-4">
                     My Skillset
                 </h2>
 
@@ -166,7 +163,7 @@
             </section>
 
             <section id="projects">
-                <h2>
+                <h2 class="text-center mb-4">
                     Side Projects
                 </h2>
 
@@ -176,7 +173,7 @@
                     </div>
                     <div class="col-sm">
                         <h3 class="font-weight-bold">
-                            <a href="https://storybox-beta.herokuapp.com" target="_blank">✒️ Storybox</a>
+                            <a class="project-link" href="https://storybox-beta.herokuapp.com" target="_blank">✒️ Storybox</a>
                         </h3>
                         <p>
                             Storybox is an online adventure game book where you can choose the story path, or write your own. Be a spy, a princess, a pirate, a rockstar, a ninja…
@@ -190,7 +187,7 @@
                     </div>
                     <div class="col-sm">
                         <h3 class="font-weight-bold">
-                            <a href="https://bit.ly/2L7Uhsp" target="_blank">🌳 InConnect</a>
+                            <a class="project-link" href="https://bit.ly/2L7Uhsp" target="_blank">🌳 InConnect</a>
                         </h3>
                         <p>
                             Open source social-network site.
@@ -204,10 +201,10 @@
                     </div>
                     <div class="col-sm">
                         <h3 class="font-weight-bold">
-                            <a href="https://martinkondor.github.io/SimpleComposer/" target="_blank">🎵 SimpleComposer</a>
+                            <a class="project-link" href="https://martinkondor.github.io/SimpleComposer/" target="_blank">🎵 SimpleComposer</a>
                         </h3>
                         <p>
-                            A little help for composing music, works from any device with web browser. Not just for composers.
+                            A little help for composing music, works from any device with any web browser. Not just for composers.
                         </p>
                     </div>
                 </div>
@@ -218,7 +215,7 @@
                     </div>
                     <div class="col-sm">
                         <h3 class="font-weight-bold">
-                            <a href="https://martinkondor.github.io/BBBHotel_Assignment/index.html" target="_blank">🏢 BBBHotel</a>
+                            <a class="project-link" href="https://martinkondor.github.io/BBBHotel_Assignment/index.html" target="_blank">🏢 BBBHotel</a>
                         </h3>
                         <p>
                             A fictional hotel's site, only front-end, coursework assignment.
@@ -232,7 +229,7 @@
                     </div>
                     <div class="col-sm">
                         <h3 class="font-weight-bold">
-                            <a href="https://martinkondor.github.io/DigitRecognizer" target="_blank">🔢 DigitRecognizer</a>
+                            <a class="project-link" href="https://martinkondor.github.io/DigitRecognizer" target="_blank">🔢 DigitRecognizer</a>
                         </h3>
                         <p>
                             A handwritten digit recognizer written &amp; trained in Python, ported to font-end.
@@ -253,62 +250,39 @@
             </section>
 
             <section id="contact">
-                <h2>
+                <h2 class="text-center mb-4">
                     Get In Touch
                 </h2>
 
-                <!--
-                <form id="email-from" class="mt-5" action="mailto:martinkondor@gmail.com" method="GET" enctype="text/plain">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <p>Email</p>
-                                <input id="email" name="email" type="email" placeholder="e. g. joedoe@gmail.com" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <p>Name</p>
-                                <input id="subject" name="subject" type="text" placeholder="e. g. Joe Doe" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Message</p>
-                            <textarea id="body" name="body" placeholder="Hey there!" class="form-control" cols="30" rows="5"></textarea>
-                        </div>
-                    </div>
-
-                    <input id="email-form-btn" name="submit" type="submit" class="btn btn-block btn-primary mt-3" value="Submit">
-                </form>
-                -->
-
-                <div class="text-center">
-                    <a title="Write an email for me" class="btn btn-primary btn-lg" href="mailto:martinkondor@gmail.com">Write an email to: martinkondor@gmail.com</a>
+                <div class="text-center mt-5">
+                    <a title="Write an email for me" class="btn btn-primary btn-lg btn-block" href="mailto:martinkondor@gmail.com">martinkondor@gmail.com</a>
                 </div>
 
-            </section>
+                <!--
+                <div class="text-center">
+                    <a title="GitHub" href="https://github.com/MartinKondor" target="_blank" class="social-link"><span>GitHub</span></a>
+                    <a title="StackOverflow" href="https://stackoverflow.com/users/9160124/martinkondor?tab=profile" target="_blank" class="social-link"><span>StackOverflow</span></a>
+                    <a title="Kaggle" href="https://www.kaggle.com/martinkondor" target="_blank" class="social-link"><span>Kaggle</span></a>
+                    <br>
+                    <a title="CodeWars" href="https://www.codewars.com/users/MartinKondor" target="_blank" class="social-link"><span>Codewars</span></a>
+                    <a title="FreeCodeCamp" href="https://www.freecodecamp.org/martinkondor" target="_blank" class="social-link"><span>FreeCodeCamp</span></a>
+                    <a title="CodePen" href="https://codepen.io/martinkondor/" target="_blank" class="social-link"><span>Codepen</span></a>
+                    <br>
+                    <a title="Youtube" href="https://www.youtube.com/user/ideiratkozzfel" target="_blank" class="social-link"><span>Youtube</span></a>
+                    <a title="Instagram" href="https://www.instagram.com/martinkondor/?hl=hu" target="_blank" class="social-link"><span>Instagram</span></a>
+                    <a title="SoundCloud" href="https://soundcloud.com/martin-kondor" target="_blank" class="social-link"><span>SoundCloud</span></a>
+                    <br>
+                    <a title="BeatStars" href="https://www.beatstars.com/martinkondor/feed" target="_blank" class="social-link"><span>BeatStars</span></a>
+                    <a title="Fiverr" href="https://www.fiverr.com/martinkondor" target="_blank" class="social-link">Fiverr</a>
+                    <a title="Patreon" href="https://www.patreon.com/martin_kondor" target="_blank" class="social-link">Patreon</a>
+                    <br>
+                    <a title="Medium" href="https://medium.com/@MartinKondor" target="_blank" class="social-link"><span>Medium</span></a>
+                    <a title="Twitter" href="https://twitter.com/MartinKondor" target="_blank" class="social-link"><span>Twitter</span></a>
+                    <a title="Quora" href="https://www.quora.com/profile/Martin-Kondor" target="_blank" class="social-link"><span>Quora</span></a>
+                </div>
+                -->
 
-            <!--
-            <div id="links" class="links">
-                <a title="GitHub" href="https://github.com/MartinKondor" target="_blank" class="social-link"><span>GitHub</span></a>
-                <a title="StackOverflow" href="https://stackoverflow.com/users/9160124/martinkondor?tab=profile" target="_blank" class="social-link"><span>StackOverflow</span></a>
-                <a title="Kaggle" href="https://www.kaggle.com/martinkondor" target="_blank" class="social-link"><span>Kaggle</span></a>
-                <br>
-                <a title="CodeWars" href="https://www.codewars.com/users/MartinKondor" target="_blank" class="social-link"><span>Codewars</span></a>
-                <a title="FreeCodeCamp" href="https://www.freecodecamp.org/martinkondor" target="_blank" class="social-link"><span>FreeCodeCamp</span></a>
-                <a title="CodePen" href="https://codepen.io/martinkondor/" target="_blank" class="social-link"><span>Codepen</span></a>
-				<br>
-                <a title="Youtube" href="https://www.youtube.com/user/ideiratkozzfel" target="_blank" class="social-link"><span>Youtube</span></a>
-                <a title="Instagram" href="https://www.instagram.com/martinkondor/?hl=hu" target="_blank" class="social-link"><span>Instagram</span></a>
-                <a title="SoundCloud" href="https://soundcloud.com/martin-kondor" target="_blank" class="social-link"><span>SoundCloud</span></a>
-				<br>
-                <a title="BeatStars" href="https://www.beatstars.com/martinkondor/feed" target="_blank" class="social-link"><span>BeatStars</span></a>
-                <a title="Fiverr" href="https://www.fiverr.com/martinkondor" target="_blank" class="social-link">Fiverr</a>
-                <a title="Patreon" href="https://www.patreon.com/martin_kondor" target="_blank" class="social-link">Patreon</a>
-				<br>
-                <a title="Medium" href="https://medium.com/@MartinKondor" target="_blank" class="social-link"><span>Medium</span></a>
-                <a title="Twitter" href="https://twitter.com/MartinKondor" target="_blank" class="social-link"><span>Twitter</span></a>
-                <a title="Quora" href="https://www.quora.com/profile/Martin-Kondor" target="_blank" class="social-link"><span>Quora</span></a>
-            </div>
-            -->
+            </section>
         </main>
 
 
