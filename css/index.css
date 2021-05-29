@@ -4,7 +4,7 @@ https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
 
 :root {
     --color-scheme: light dark;
-    --dark-main: #011627;
+    --dark-main: #000;  /*#011627*/
     --light-main: #FDFFFC;
 }
 
@@ -51,6 +51,12 @@ section i {
 section p,
 section span {
     font-size: 14px;
+}
+
+section .date-info {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
 }
 
 hr {
