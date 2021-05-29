@@ -1,6 +1,12 @@
 /*
-https://coolors.co/131515-2b2c28-339989-7de2d1-fffafb
+https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
 */
+
+:root {
+    --color-scheme: light dark;
+    --dark-main: #011627;
+    --light-main: #FDFFFC;
+}
 
 html,
 body {
@@ -10,16 +16,16 @@ body {
     width: 100%;
     overflow-x: hidden;
 
-    font-size: 18.54px;
+    font-size: 17px;
     text-rendering: optimizeLegibility;
     font-family: 'Ovo', serif;
 
-    color: rgb(250, 250, 255);
-    background-color: rgb(16, 25, 30);
+    background-color: var(--light-main);
+    color: var(--dark-main);
 }
 
 body {
-    padding: 80px 275px 80px 275px;
+    padding: 20px 400px 50px 400px;
 }
 
 main {
@@ -29,36 +35,59 @@ main {
 
 a {
     color: rgb(0, 203, 230);
-    transition: 0.22s all ease-in;
+    transition: 0.3s all ease-in;
+    font-weight: bold;
 }
 
 a:hover {
-    color: rgb(126, 226, 255);
+    color: #41EAD4;
 }
 
 i {
     font-size: 20px;
-    margin-right: 16.8px;
+    margin-right: 16px;
+}
+
+#software i {
+    font-size: 14px;
+    margin-right: 16px;
+}
+
+#software p {
+    font-size: 14px;
 }
 
 hr {
     background-color: #858585;
 }
 
+@media screen and (max-width: 1500px) {
+    body {
+        padding: 10px 300px 50px 300px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     body {
-        padding: 50px 200px 50px 200px;
+        padding: 0px 200px 50px 200px;
     }
 }
 
 @media screen and (max-width: 992px) {
     body {
-        font-size: 20px;
         padding: 10px;
     }
 
     i {
-        font-size: 45px;
-        margin-bottom: 30px;
+        font-size: 35px;
+        margin-top: 10px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html,
+    body {
+        background-color: var(--dark-main);
+        color: var(--light-main);
     }
 }
