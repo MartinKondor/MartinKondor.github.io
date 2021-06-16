@@ -4,7 +4,7 @@ https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
 
 :root {
     --color-scheme: light dark;
-    --dark-main: #000;  /*#011627*/
+    --dark-main: #0e0e0e;
     --light-main: #FDFFFC;
 }
 
@@ -16,7 +16,7 @@ body {
     width: 100%;
     overflow-x: hidden;
 
-    font-size: 17px;
+    font-size: 20px;
     text-rendering: optimizeLegibility;
     font-family: 'Ovo', serif;
 
@@ -24,12 +24,40 @@ body {
     color: var(--dark-main);
 }
 
-body {
-    padding: 15px 500px 50px 500px;
+#bg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    word-break: break-all;
+    word-wrap: break-word;
+    display: block;
+    top: 0;
+    left: 0;
+    color: #ffa01c39;
+    background-color: transparent !important;
+    filter: blur(2px);
+}
+
+main {
+    margin-top: 7px;
+    position: relative;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 15px 500px 50px 500px !important;
+    background-color: transparent;
 }
 
 a {
+    font-size: 22px;
     color: rgb(0, 203, 230);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0, 0.2);
     transition: 0.3s all ease-in;
     font-weight: bold;
 }
@@ -39,18 +67,19 @@ a:hover {
 }
 
 i {
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 16px;
+    margin-top: 10px;
 }
 
 section i {
-    font-size: 14px;
+    font-size: 18px;
     margin-right: 16px;
 }
 
 section p,
 section span {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 section .date-info {
@@ -64,20 +93,20 @@ hr {
 }
 
 @media screen and (max-width: 1500px) {
-    body {
-        padding: 10px 300px 50px 300px;
+    main {
+        padding: 10px 300px 50px 300px !important;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    body {
-        padding: 10px 200px 50px 200px;
+    main {
+        padding: 10px 200px 50px 200px !important;
     }
 }
 
 @media screen and (max-width: 992px) {
-    body {
-        padding: 10px 0px 0px 0px;
+    main {
+        padding: 10px 0px 0px 0px !important;
     }
 
     i {
