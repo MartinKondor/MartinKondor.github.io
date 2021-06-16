@@ -41,6 +41,7 @@ body {
     color: #ffa01c39;
     background-color: transparent !important;
     filter: blur(2px);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0, 0.1);
 }
 
 main {
