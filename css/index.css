@@ -93,6 +93,10 @@ hr {
     background-color: #858585;
 }
 
+#profile-img {
+    margin-bottom: 22px;
+}
+
 @media screen and (max-width: 1500px) {
     main {
         padding: 10px 300px 50px 300px !important;
@@ -106,8 +110,17 @@ hr {
 }
 
 @media screen and (max-width: 992px) {
+    #profile-img {
+        width: 50px;
+        margin-bottom: 20px;
+    }
+
+    #name {
+        font-size: 49px;
+    }
+
     main {
-        padding: 10px 0px 0px 0px !important;
+        padding: 10px 10px 20px 10px !important;
     }
 
     i {
