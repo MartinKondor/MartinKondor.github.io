@@ -133,7 +133,7 @@ hr {
 @media (prefers-color-scheme: dark) {
     html,
     body {
-        background-color: var(--dark-main);
+        background-color: #000/*var(--dark-main)*/;
         color: var(--light-main);
     }
 }
