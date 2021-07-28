@@ -2,13 +2,12 @@
 {
 
     // Update copyright
-    $('#copyright').html($('#copyright').html() + new String(new Date().getFullYear()));
-    
+    $('#copyright').html(new String(new Date().getFullYear()));
+
     $('#vis-counter-btn').on('click', function () {
         $('#vis-counter').css('display', 'block');
     });
 
-    /*
     var w = $(document).width();
     var h = $(document).height() + 1;
     var w_i = 0;
@@ -38,6 +37,5 @@
             }
         }
     }, 2);
-    */
 
 })(jQuery);
