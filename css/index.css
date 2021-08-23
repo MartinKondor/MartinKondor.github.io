@@ -4,8 +4,8 @@ https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
 
 :root {
     --color-scheme: light dark;
-    --dark-main: #0e0e0e;
-    --light-main: #FDFFFC;
+    --dark-main: #011627;
+    --light-main: #fdfffc;
 }
 
 html,
@@ -23,27 +23,6 @@ body {
 
     background-color: var(--light-main);
     color: var(--dark-main);
-}
-
-#bg {
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin: 0 !important;
-    padding: 0 !important;
-    position: absolute;
-    overflow: hidden !important;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-    word-break: break-all;
-    word-wrap: break-word;
-    display: block;
-    top: 0;
-    left: 0;
-    color: #FF9F1C39;
-    background-color: transparent !important;
-    filter: blur(2px);
-    text-shadow: 0px 0px 2px rgb(0, 0, 0, 0.1);
 }
 
 main {
