@@ -20,13 +20,7 @@ body {
     text-rendering: optimizeLegibility;
     font-family: 'Montserrat', sans-serif;
 
-    /*background-color: var(--light-main);*/
-    background: rgb(253,255,252);
-    background: -moz-radial-gradient(circle, rgba(253,255,252,1) 0%, rgba(255,255,255,1) 22%, rgba(254,255,254,1) 43%, rgba(254,255,254,1) 62%, rgba(253,255,253,1) 80%, rgba(255,255,255,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(253,255,252,1) 0%, rgba(255,255,255,1) 22%, rgba(254,255,254,1) 43%, rgba(254,255,254,1) 62%, rgba(253,255,253,1) 80%, rgba(255,255,255,1) 100%);
-    background: radial-gradient(circle, rgba(253,255,252,1) 0%, rgba(255,255,255,1) 22%, rgba(254,255,254,1) 43%, rgba(254,255,254,1) 62%, rgba(253,255,253,1) 80%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfffc",endColorstr="#ffffff",GradientType=1);
-
+    background-color: var(--light-main);
     color: var(--dark-main);
 }
 
@@ -57,7 +51,7 @@ a:hover {
 }
 
 i {
-    font-size: 30px;
+    font-size: 34px;
     margin-right: 16px;
     margin-top: 12px;
 }
@@ -121,15 +115,10 @@ hr {
 @media (prefers-color-scheme: dark) {
     html,
     body {
-        /*background-color: var(--dark-main);*/
-        background: rgb(0,0,34);
-        background: -moz-radial-gradient(circle, rgba(0,0,34,1) 0%, rgba(0,0,14,1) 22%, rgba(0,0,26,1) 38%, rgba(0,0,15,1) 55%, rgba(0,0,33,1) 74%, rgba(0,0,0,1) 100%);
-        background: -webkit-radial-gradient(circle, rgba(0,0,34,1) 0%, rgba(0,0,14,1) 22%, rgba(0,0,26,1) 38%, rgba(0,0,15,1) 55%, rgba(0,0,33,1) 74%, rgba(0,0,0,1) 100%);
-        background: radial-gradient(circle, rgba(0,0,34,1) 0%, rgba(0,0,14,1) 22%, rgba(0,0,26,1) 38%, rgba(0,0,15,1) 55%, rgba(0,0,33,1) 74%, rgba(0,0,0,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000022",endColorstr="#000000",GradientType=1);
+        background-color: var(--dark-main);
         color: var(--light-main);
     }
-    
+        
     hr {
         background-color: #fdfdff;
     }
