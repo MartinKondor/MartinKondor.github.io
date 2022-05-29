@@ -8,7 +8,7 @@
         <meta name="robots" content="index, follow">
         <meta name="description" content="Martin Kondor" />
         <meta name="application-name" content="Martin Kondor" />
-        <meta name="keywords" content="martin kondor,kondor martin,martinkondor,martin,kondor,ai,freelance,software,developer"/>
+        <meta name="keywords" content="martin kondor,kondor martin,martinkondor,martin,kondor,ai,freelance,software,developer,deep,learning,deep learning,neural networks,neural,networks,science,researcher"/>
         <meta property="og:url" content="https://martinkondor.github.io/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Martin Kondor" />
@@ -25,213 +25,231 @@
 
         <title>Martin Kondor | Webpage</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3787943012725141" crossorigin="anonymous"></script>
         
         <!--<link rel="stylesheet" href="lib/css/fontawesome-all.min.css">-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="lib/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/bg.css">
     </head>
     <body>
         
-        <main class="container-fluid mb-5">
-            <div id="about">
+        <div id="bg"></div>
 
-                <img id="profile-img" src="img/logo-w.jpg" width="70px" alt="Profile image">
+        <header>
+            <nav id="about" class="navbar navbar-expand-lg navbar-dark navbar-fixed">
 
-                <h1 id="name" class="font-weight-bold">
-                    Martin Kondor
-                </h1> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <p id="introduction" class="mb-2">
-                    Software Developer. Student at the University Of Pannonia, Hungary.
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#about">About</a>
+                        <a class="nav-item nav-link" href="#ai">AI</a>
+                        <a class="nav-item nav-link" href="#web">Web</a>
+                        <a class="nav-item nav-link" href="#software">Software</a>
+                        <a class="nav-item nav-link" href="#essays">Essays</a>
+                        <a class="nav-item nav-link" href="#resume">Resume</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="text-center">
+                <img id="profile-img" class="mt-5" src="img/profile_photo_art.png" alt="Profile image">
+
+                <p class="text-uppercase mt-3" style="letter-spacing: 1px; color: #bbb;">
+                    Freelancer
+                    <br>
+                    Web &amp; Software Developer
+                    <br>
+                    <span class="text-muted">(future)</span> Artificial Intelligence Researcher
+                    <br>
+                    Student at the University Of Pannonia, Hungary
+                    <br>
+                    My name is
                 </p>
-
-                <a href="mailto:martinkondor@gmail.com">martinkondor@gmail.com</a>
-
-                <br>
-
-                <a title="Fiverr" href="https://www.fiverr.com/martinkondor" target="_blank">
-                    <img id="fiverr-img" class="img-responsive" alt="Hire me on fiverr!" title="Hire me on fiverr!" src="img/hire_me_on_fiverr_button.png" width="120">
-                </a>
-                <a href="https://www.codewars.com/users/MartinKondor" title="Codewars" target="_blank">
-                    <img src="https://www.codewars.com/users/MartinKondor/badges/micro" alt="Codewars badge">
-                </a>
-
-                <br>
-                <a href="https://github.com/MartinKondor" title="GitHub" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://stackoverflow.com/users/9160124/martinkondor?tab=profile" title="StackOverflow" target="_blank">
-                    <i class="fab fa-stack-overflow"></i>
-                </a>
-                <a href="https://martinkondor.medium.com/" title="Medium" target="_blank">
-                    <i class="fab fa-medium"></i>
-                </a>
-                <a href="https://play.google.com/store/apps/developer?id=Martin+Kondor/" title="Play Store" target="_blank">
-                    <i class="fab fa-play-store"></i>
-                </a>
-
-                <!--
-                <a href="https://www.researchgate.net/profile/Martin-Kondor" title="ResearchGate" target="_blank">
-                    <i class="fab fa-researchgate"></i>
-                </a>
-
-                <a href="https://www.youtube.com/channel/UCRRsVuC8x1Pi7MaN6UbvK8A" title="YouTube" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.instagram.com/martinkondor/" title="Instagram" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com/@martinkondor2" title="TikTok" target="_blank">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-                -->
-
-                <br>
-
+                <h1 id="name" class="mt-4">Martin Kondor</h1>
             </div>
-            
-            <hr>
 
-            <section id="software">
-                <h2 id="software-title" class="h1 font-weight-bold">Software</h2>
-
-                <a href="https://github.com/MartinKondor/DiscordStocks" target="_blank">DiscordStocks</a>
-                <span>-</span>
-                <a href="https://github.com/MartinKondor/DiscordStocks"><i class="fas fa-code" title="Source"></i></a>
-                <p>
-                    Discord bot for asking down various information about stocks.
-                </p>
-
-                <a href="https://storybox-beta.herokuapp.com" target="_blank">Storybox</a>
-                <p>
-                    Online adventure game book community.
-                </p>
-
-                <a href="http://inconnect-beta.herokuapp.com/login" target="_blank">InConnect</a>
-                <span>-</span>
-                <a href="https://github.com/MartinKondor/inconnect"><i class="fas fa-code" title="Source"></i></a>
-                <p>
-                    Open source social-network site built with PHP &amp; PostgreSQL.
-                </p>
-                
-                <a href="https://martinkondor.github.io/SimpleComposer/" target="_blank">SimpleComposer</a>
-                <span>-</span>
-                <a href="https://github.com/MartinKondor/SimpleComposer"><i class="fas fa-code" title="Source"></i></a>
-                <p>
-                    Website as a help for music writing with a playable synthesizer.
-                </p>
-
-                <a href="https://martinkondor.github.io/DigitRecognizer" target="_blank">DigitRecognizer</a>
-                <span>-</span>
-                <a href="https://github.com/MartinKondor/DigitRecognizer"><i class="fas fa-code" title="Source"></i></a>
-                <p>
-                    A handwritten digit recognizer written &amp; trained in Python, ported to font-end.
-                </p>
-
-                <a href="https://github.com/MartinKondor/TinyChat" target="_blank">TinyChat</a>
-                <span>-</span>
-                <a href="https://github.com/MartinKondor/TinyChat"><i class="fas fa-code" title="Source"></i></a>
-                <p>
-                    Extra small chat client with GUI, built wiht Python-Tkinter.
-                </p>
-
-                <a href="https://martinkondor.github.io/SkinCancerDetection/" target="_blank">SkinCancerDetection</a>
-                <span>-</span>
-                <a href="https://github.com/MartinKondor/SkinCancerDetection" target="_blank"><i class="fas fa-code" title="Source"></i></a>
-                <p>
-                    Skin cancer detection with pretrained CNN ported to front-end.
-                </p>
-
-            </section>
-            
-            <hr>
-            <section id="apps">
-                <h2 id="apps-title" class="h1 font-weight-bold">Apps</h2>
-            
-                <a href="https://play.google.com/store/apps/details?id=com.martinkondor.randomidentity" target="_blank">Random Identity</a>
-                <span>-</span>
-                <a href="https://github.com/MartinKondor/RandomIdentityApp"><i class="fas fa-code" title="Source"></i></a>
-                <p>
-                    Android App For Generating Random Identities, built with Java.
-                </p>
-
-                <a href="https://play.google.com/store/apps/details?id=com.martinkondor.Rapid" target="_blank">Rapid</a>
-                <span>-</span>
-                <a href="https://github.com/MartinKondor/Rapid"><i class="fas fa-code" title="Source"></i></a>
-                <p>
-                    One-way mobile game built with React-Native and Expo.
-                </p>
-
-            </section>
-
-            <hr>
-            
-            <section id="essays">
-                <h2 id="essays-title" class="h1 font-weight-bold">
-                    Essays
+            <section id="ai">
+                <h2>
+                    ARTIFICIAL INTELLIGENCE
                 </h2>
+                <hr>
 
-                <a href="https://medium.com/intuition/why-is-mathematics-the-queen-of-all-sciences-9f0a58b73306" target="_blank">
-                    Why Is Mathematics The Queen Of All Sciences?
-                </a>
-                <p class="date-info">
-                    Nov 9, 2021
-                </p>
-                <p>
-                    Introduction to the queen.
-                </p>
-
-                <a href="https://medium.com/intuition/top-5-books-to-learn-understand-math-from-the-basics-b698f4f4c8f9" target="_blank">
-                    Top 5 books to learn & understand math from the basics
-                </a>
-                <p class="date-info">
-                    Nov 2, 2021
-                </p>
-                <p>
-                    For hungry brains.
-                </p>
-
-            </section>
-
-            <!--
-            <hr>            
-            <section id="papers">
-                <h2 id="papers-title" class="h1 font-weight-bold">
-                    Papers
-                </h2>
-
-            </section>
-            -->
-
-            <footer class="text-center text-muted small mt-5">
-            
-                <form class="mb-2" action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="hosted_button_id" value="97HNCQALLBDG6" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_HU/i/scr/pixel.gif" width="1" height="1" />
-                </form>                    
-
-                <p style="margin-top: 0px; margin-bottom: 0px;">
-                    <strong>Bitcoin (BTC):</strong> 3DLVhaGsDdiRNWYD7UeC9X5xd1nPMpmqki
-                </p>
-                <p style="margin-top: 0px; margin-bottom: 0px;">
-                    <strong>Ethereum (ETH):</strong> 0x8d10c1ac3D167508c6B314e0675F1a81Ab848CeC
-                </p>
-                <p style="margin-top: 0px; margin-bottom: 0px;">
-                    <strong>Cardano (ADA):</strong> addr1vxzr9staw24l7nqn2q89rlecguuqkvhnshp7qpeuyhkuypsprlkvr
-                </p>
-    
-                <div class="mt-2">
-                    Copyright <span id="copyright">2022</span> &copy; Martin Kondor
+                <div class="project-li">
+                    <a class="project-name" href="https://martinkondor.github.io/DigitRecognizer" target="_blank">
+                        DigitRecognizer
+                    </a>
+                    <p class="project-info">
+                        A handwritten digit recognizer written &amp; trained in Python, ported to font-end.
+                        <a class="project-more" href="https://github.com/MartinKondor/DigitRecognizer">[more]</a>
+                    </p>
                 </div>
 
-            </footer>
+                <div class="project-li">
+                    <a class="project-name" href="https://martinkondor.github.io/SkinCancerDetection/" target="_blank">
+                        SkinCancerDetection
+                    </a>
+                    <p class="project-info">
+                        Skin cancer detection with pretrained CNN ported to front-end.
+                        <a class="project-more" href="https://github.com/MartinKondor/SkinCancerDetection" target="_blank">[more]</a>
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="web">
+                <h2>Web</h2>
+                <hr>
+
+                <div class="project-li">
+                    <a class="project-name" href="https://storybox-beta.herokuapp.com" target="_blank">StoryBox</a>
+                    <p class="project-info">
+                        Online adventure game book community.
+                    </p>
+                </div>
+
+                <div class="project-li">
+                    <a class="project-name" href="http://inconnect-beta.herokuapp.com/login" target="_blank">InConnect</a>
+                    <p class="project-info">
+                        Open source social-network site built with PHP &amp; PostgreSQL. <a class="project-more" href="https://github.com/MartinKondor/inconnect">[more]</a>
+                    </p>
+                </div>
+
+                <div class="project-li">
+                    <a class="project-name" href="https://martinkondor.github.io/SimpleComposer/" target="_blank">SimpleComposer</a>
+                    <p class="project-info">
+                        Website as a help for music writing with a playable synthesizer. <a class="project-more" href="https://github.com/MartinKondor/SimpleComposer">[more]</a>
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="software">
+                <h2>Software</h2>
+                <hr>
+
+                <div class="project-li">
+                    <a class="project-name" href="https://github.com/MartinKondor/DiscordStocks" target="_blank">DiscordStocks</a>
+                    <p class="project-info">
+                        Discord bot with a stock price web API. <a class="project-more" href="https://github.com/MartinKondor/DiscordStocks">[more]</a>
+                    </p>
+                </div>
+                
+                <div class="project-li">
+                    <a class="project-name" href="https://github.com/MartinKondor/TinyChat" target="_blank">TinyChat</a>
+                    <p class="project-info">
+                        Extra small chat client with GUI, built wiht Python-Tkinter. <a class="project-more" href="https://github.com/MartinKondor/TinyChat">[more]</a>
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="essays">
+                <h2>Essays</h2>
+                <hr>
+                <div class="project-li">
+                    <a class="project-name" href="https://medium.com/intuition/why-is-mathematics-the-queen-of-all-sciences-9f0a58b73306" target="_blank">
+                        Why Is Mathematics The Queen Of All Sciences?
+                    </a>
+                    <p class="project-info">
+                        Introduction to the queen. - Nov 9, 2021
+                    </p>
+                </div>
+
+                <div class="project-li">
+                    <a class="project-name" href="https://medium.com/intuition/top-5-books-to-learn-understand-math-from-the-basics-b698f4f4c8f9" target="_blank">
+                        Top 5 books to learn & understand math from the basics
+                    </a>
+                    <p class="project-info">
+                        For hungry brains. - Nov 2, 2021
+                    </p>
+                </div>
+                
+            </section>
+
+            <section id="resume">
+                <h2>Resume</h2>
+                <hr>
+
+                <h5 class="mb-4 font-weight-bold text-uppercase" style="margin-top: 100px;">Languages</h5>
+                <p class="mb-3">
+                    <span class="font-weight-bold">Hungarian</span>
+                    <br>
+                    <span class="text-muted">Mother Tongue</span>
+                </p>
+                <p class="mb-3">
+                    <span class="font-weight-bold">English</span>
+                    <br>
+                    <span class="text-muted">Vantage (B2)</span>
+                </p>
+
+                <h5 class="mb-4 font-weight-bold text-uppercase" style="margin-top: 100px;">Education</h5>
+                <p class="mb-3">
+                    <span class="font-weight-bold">High School Gradulate</span>
+                    <br>
+                    <span class="text-muted">Siófoki Szakképzési Centrum Hikman Béla Szakképző Iskola [2012/2016]</span>
+                </p>
+                <p class="mb-3">
+                    <span class="font-weight-bold">System Administrator</span>
+                    <br>
+                    <span class="text-muted">Siófoki Szakképzési Centrum Hikman Béla Szakképző Iskola [2016/2018]</span>
+                </p>
+                <p class="mb-3">
+                    <span class="font-weight-bold">Computer Science BSc</span>
+                    <br>
+                    <span class="text-muted">Pannon Egyetem [2020/Present]</span>
+                </p>
+
+                <h5 class="mb-4 font-weight-bold text-uppercase" style="margin-top: 100px;">Experience</h5>
+                <p class="mb-3">
+                    <span class="font-weight-bold">Embedded Software Developer</span>
+                    <br>
+                    <span class="text-muted">Industrie Elektrik Kft. [2018/2020]</span>
+                </p>
+
+            </section>
+
         </main>
+        
+        <footer class="text-center mt-3 pt-4 pb-1">
+
+            <a id="email" href="mailto:martinkondor@gmail.com">martinkondor@gmail.com</a>
+            <br>
+
+            <a href="https://github.com/MartinKondor" title="GitHub" target="_blank">
+                <i class="fab fa-github icon"></i>
+            </a>
+            <a href="https://stackoverflow.com/users/9160124/martinkondor?tab=profile" title="StackOverflow" target="_blank">
+                <i class="fab fa-stack-overflow icon"></i>
+            </a>
+            <a href="https://martinkondor.medium.com/" title="Medium" target="_blank">
+                <i class="fab fa-medium icon"></i>
+            </a>
+            <a href="https://www.researchgate.net/profile/Martin-Kondor" title="ResearchGate" target="_blank">
+                <i class="fab fa-researchgate icon"></i>
+            </a>
+            <a href="https://www.codewars.com/users/MartinKondor" title="Codewars" target="_blank">
+                <i class="fas fa-code icon"></i>
+            </a>
+
+            <br>
+
+            <div>
+                &copy; <span id="copyright">2022</span> Martin Kondor
+            </div>
+
+            <a href="#about" title="Go to the top of the page">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+
+        </footer>
 
         <script src="lib/js/jquery.min.js"></script>
         <script src="lib/js/bootstrap.min.js"></script>

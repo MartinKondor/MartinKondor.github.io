@@ -1,11 +1,13 @@
 /*
-https://coolors.co/000000-0e402d-295135-5a6650-9fcc2e
+https://coolors.co/4b7f52-7dd181-96e8bc-b6f9c9-c9ffe2
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 :root {
     --color-scheme: light dark;
-    --dark-main: rgb(0, 0, 34);
-    --light-main: #fdfffc;
+    --text-main: #eee0e7;
+    --bg-main: #1C1D21;
 }
 
 html,
@@ -18,112 +20,125 @@ body {
 
     font-size: 16px;
     text-rendering: optimizeLegibility;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Exo', sans-serif;
 
-    background-color: var(--light-main);
-    color: var(--dark-main);
-}
-
-main {
-    margin-top: 7px;
-    position: relative;
-    z-index: 1000;
-    height: 100%;
-    width: 100%;
-    padding: 15px 500px 50px 500px !important;
-    background-color: transparent;
-}
-
-footer {
-    display: block;
-}
-
-a {
-    font-size: 18px;
-    color: rgb(23, 194, 217);
-    text-shadow: 0px 0px 2px rgb(3, 174, 197, 0.2);
-    transition: 0.3s all ease-in;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #41EAD4;
-}
-
-i {
-    font-size: 34px;
-    margin-right: 16px;
-    margin-top: 12px;
-}
-
-section i {
-    font-size: 14px;
-    margin-right: 16px;
-}
-
-section p,
-section span {
-    font-size: 14px;
-}
-
-section .date-info {
-    font-size: 10px;
-    margin: 0px;
-    padding: 0px;
-}
-
-hr {
-    background-color: #050509;
+    color: var(--text-main);
+    background-color: #1c1d21b4;    
 }
 
 #profile-img {
-    content: url("../img/logo-w.jpg");
-    margin-bottom: 10px;
+    box-shadow: 0px -5px 30px rgb(34, 34, 34);
+    border-radius: 22%;
+    width: 90px;
+}
+
+#email {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#name {
+    font-size: 72px;
+    letter-spacing: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.icon {
+    margin: 23px 16px 23px 16px;
+    text-shadow: 0 0 10px #000f089e;
+    font-size: 36px;
+}
+
+.icon:hover,
+.icon:active {
+    text-decoration: none !important;
+}
+
+.nav-link {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.project-li {
+    margin-top: 50px;
+}
+
+.project-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-more {
+    color: #777;
+}
+
+.project-info {
+    color: #999;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(200, 200, 200);
+}
+
+section {
+    text-align: center;
+    padding: 150px 300px 150px 300px;
+}
+
+section h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #bbb;
+    font-weight: bold;
+}
+
+footer, nav {
+    background-color: #2A3D45;
+}
+
+footer {
+    bottom: 0;
+}
+
+hr {
+    height: 3px;
+    width: 200px;
+    background-color: #ddd0d7 !important;
 }
 
 @media screen and (max-width: 1500px) {
-    main {
-        padding: 10px 300px 50px 300px !important;
-    }
 }
 
 @media screen and (max-width: 1200px) {
-    main {
-        padding: 10px 200px 50px 200px !important;
+    section {
+        padding: 30px 75px 30px 75px !important;
     }
 }
 
 @media screen and (max-width: 992px) {
-    #profile-img {
-        width: 50px;
-    }
-
     #name {
-        font-size: 42px;
+        font-size: 40px !important;
+        letter-spacing: 12px !important;
     }
 
-    main {
-        padding: 10px 10px 20px 10px !important;
+    section {
+        padding: 15px 25px 15px 25px !important;
     }
 
-    i {
-        font-size: 33px;
-        margin-top: 10px;
+    header {
+        display: none;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    html,
-    body {
-        background-color: var(--dark-main);
-        color: var(--light-main);
-    }
-        
-    hr {
-        background-color: #fdfdff;
-    }
 
-    #profile-img {
-        content: url("../img/logo.jpg");
-    }
 }
