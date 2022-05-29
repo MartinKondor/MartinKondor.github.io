@@ -120,7 +120,7 @@ hr {
 
 @media screen and (max-width: 1200px) {
     section {
-        padding: 30px 75px 30px 75px !important;
+        padding: 150px 75px 150px 75px !important;
     }
 }
 
@@ -131,7 +131,7 @@ hr {
     }
 
     section {
-        padding: 15px 25px 15px 25px !important;
+        padding: 150px 25px 150px 25px !important;
     }
 
     header {
