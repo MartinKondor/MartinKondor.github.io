@@ -1,13 +1,17 @@
 /*
-https://coolors.co/4b7f52-7dd181-96e8bc-b6f9c9-c9ffe2
+https://uigradients.com/#Lawrencium
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 :root {
     --color-scheme: light dark;
+
     --text-main: #eee0e7;
     --bg-main: #1C1D21;
+    --bg-body: #1c1d21a9;
+
+    --mid-size: 20px;
 }
 
 html,
@@ -18,23 +22,29 @@ body {
     width: 100%;
     overflow-x: hidden;
 
-    font-size: 16px;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
     font-family: 'Exo', sans-serif;
 
     color: var(--text-main);
-    background-color: #1c1d21b4;    
+    /*background-color: var(--bg-body);*/
+
+    background: rgb(15,12,41,0.7);
+    background: -moz-linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
+    background: linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0c29",endColorstr="#24243e",GradientType=1);
 }
 
 #profile-img {
-    box-shadow: 0px -5px 30px rgb(34, 34, 34);
-    border-radius: 22%;
-    width: 90px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7) inset;
+    border-radius: 100%;
+    width: 144px;
 }
 
 #email {
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--mid-size);
 }
 
 #name {
@@ -59,7 +69,7 @@ body {
 }
 
 .nav-link {
-    font-size: 18px;
+    font-size: var(--mid-size);
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -69,7 +79,7 @@ body {
 }
 
 .project-name {
-    font-size: 18px;
+    font-size: var(--mid-size);
     font-weight: bold;
 }
 
@@ -83,10 +93,11 @@ body {
 
 a {
     color: rgb(255, 255, 255);
+    transition: all 0.5s;
 }
 
 a:hover {
-    color: rgb(200, 200, 200);
+    color: rgb(192, 192, 192);
 }
 
 section {
@@ -97,12 +108,19 @@ section {
 section h2 {
     text-transform: uppercase;
     margin-bottom: 30px;
-    color: #bbb;
+    color: #ccc;
     font-weight: bold;
 }
 
 footer, nav {
-    background-color: #2A3D45;
+    /*background-color: #2A3D45;*/
+    background: rgb(15,12,41);
+    background: -moz-linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
+    background: linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0c29",endColorstr="#24243e",GradientType=1);
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 footer {
@@ -110,9 +128,9 @@ footer {
 }
 
 hr {
-    height: 3px;
+    height: 4px;
     width: 200px;
-    background-color: #ddd0d7 !important;
+    background-color: #ddd0d7e8 !important;
 }
 
 @media screen and (max-width: 1500px) {
@@ -126,8 +144,8 @@ hr {
 
 @media screen and (max-width: 992px) {
     #name {
-        font-size: 40px !important;
-        letter-spacing: 12px !important;
+        font-size: 35px !important;
+        letter-spacing: 8px !important;
     }
 
     section {
