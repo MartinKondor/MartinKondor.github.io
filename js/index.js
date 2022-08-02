@@ -23,5 +23,7 @@
     // Update copyright
     $('#copyright').html(new String(new Date().getFullYear()));
 
+    // console.clear();
+    console.log("%c Need a developer? martinkondor@gmail.com", 'background: #0a0a0a; color: #fff; font-size: 25px; padding: 20px;');
 
 })(jQuery);
