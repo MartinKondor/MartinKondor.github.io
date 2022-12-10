@@ -15,6 +15,9 @@
     background-size: 300px 150px;
     background-position: center bottom;
     z-index: -1;
+
+    -webkit-animation: animatebg 289s ease infinite;
+            animation: animatebg 289s ease infinite;
 }
   #bg:before {
     content: '';
@@ -200,4 +203,27 @@
     }
   }
   
+  @-webkit-keyframes animatebg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes animatebg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
   

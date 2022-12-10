@@ -100,7 +100,15 @@ a:hover {
     color: rgb(192, 192, 192);
 }
 
+nav {
+    width: 100%;
+    position: absolute !important;
+}
+
 section {
+    margin: 200px;
+    /*background-color: #1c1d2146;*/
+    border-radius: 20px;
     text-align: center;
     padding: 150px 250px 150px 250px;
 }
@@ -115,12 +123,15 @@ section h2 {
 }
 
 footer, nav {
-    /*background-color: #2A3D45;*/
+    background-color: rgb(15,12,41, 0.8);
+    
+    /*
     background: rgb(15,12,41);
     background: -moz-linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
     background: -webkit-linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
     background: linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0c29",endColorstr="#24243e",GradientType=1);
+    */
 
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
@@ -136,10 +147,14 @@ hr {
 }
 
 @media screen and (max-width: 1500px) {
+    section {
+        margin: 100px !important;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     section {
+        margin: 50px !important;
         padding: 150px 75px 150px 75px !important;
     }
 }
@@ -155,6 +170,7 @@ hr {
     }    
 
     section {
+        margin: 0px !important;
         padding: 150px 25px 150px 25px !important;
     }
 
