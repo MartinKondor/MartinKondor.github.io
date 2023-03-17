@@ -16,8 +16,10 @@
     background-position: center bottom;
     z-index: -1;
 
+    /*
     -webkit-animation: animatebg 289s ease infinite;
             animation: animatebg 289s ease infinite;
+    */
 }
   #bg:before {
     content: '';
