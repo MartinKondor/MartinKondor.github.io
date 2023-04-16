@@ -16,6 +16,9 @@
     background-position: center bottom;
     z-index: -1;
 
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+
     /*
     -webkit-animation: animatebg 289s ease infinite;
             animation: animatebg 289s ease infinite;

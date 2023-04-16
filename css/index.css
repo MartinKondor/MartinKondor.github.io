@@ -48,8 +48,8 @@ body {
 }
 
 #name {
-    font-size: 70px;
-    letter-spacing: 25px;
+    font-size: 49px;
+    letter-spacing: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -123,16 +123,7 @@ section h2 {
 }
 
 footer, nav {
-    background-color: rgb(15,12,41, 0.8);
-    
-    /*
-    background: rgb(15,12,41);
-    background: -moz-linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
-    background: linear-gradient(135deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 48%, rgba(36,36,62,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0c29",endColorstr="#24243e",GradientType=1);
-    */
-
+    background-color: rgb(15,12,41, 0.90);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
