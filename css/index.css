@@ -36,6 +36,10 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0c29",endColorstr="#24243e",GradientType=1);
 }
 
+p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
+}
+
 #profile-img {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7) inset;
     border-radius: 15%;
