@@ -102,8 +102,8 @@ p {
     background-position: center center;
     background-size: 120vw 120vh;
     z-index: -1;
-    filter: blur(50px);
-    -webkit-filter: blur(50px);
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
 }
 
 .icon {
@@ -218,6 +218,24 @@ hr {
 
     header {
         display: none;
+    }
+
+    #hire-me-btn {
+        height: 75px !important;
+        width: 75px !important;
+        bottom: none !important;
+        top: 10px !important;
+        right: 10px !important;
+        font-size: 16px !important;
+    }
+
+    #hire-me-btn:hover {
+        height: 75px !important;
+        width: 75px !important;
+        bottom: none !important;
+        top: 10px !important;
+        right: 10px !important;
+        font-size: 16px !important;
     }
 }
 
