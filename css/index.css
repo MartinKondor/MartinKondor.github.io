@@ -8,6 +8,11 @@ https://uigradients.com/#Lawrencium
     --color-scheme: light dark;
 
     --text-main: #eee0e7;
+
+    /*
+    --bg-main: #1C1D21;
+    --bg-body: #1c1d21a9;
+    */
     --bg-main: #1C1D21;
     --bg-body: #1c1d21a9;
 
@@ -29,10 +34,10 @@ body {
     color: var(--text-main);
     /*background-color: var(--bg-body);*/
 
-    background: rgb(15,12,41,0.7);
-    background: -moz-linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
-    background: linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
+    background: rgb(15,12,41,0.85);
+    background: -moz-linear-gradient(135deg, rgba(15,12,41,0.85) 0%, rgba(48,43,99,0.85) 48%, rgba(36,36,62,0.85) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(15,12,41,0.85) 0%, rgba(48,43,99,0.85) 48%, rgba(36,36,62,0.85) 100%);
+    background: linear-gradient(135deg, rgba(15,12,41,0.85) 0%, rgba(48,43,99,0.85) 48%, rgba(36,36,62,0.85) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0c29",endColorstr="#24243e",GradientType=1);
 }
 
@@ -59,6 +64,46 @@ p {
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 42px;
+}
+
+#hire-me-btn {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgb(40, 40, 40);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: center; 
+    transition: all 0.5s;
+}
+
+#hire-me-btn:hover {
+    width: 200px !important;
+    height: 200px !important;
+    bottom: 25px !important;
+    right: 25px !important;
+    font-size: 32px !important;
+    box-shadow: 0 0 100px rgb(40, 40, 40) !important;
+}
+
+#bg-abstract {
+    background: url("../img/bgs/abstract.png");
+    width: 100vw;
+    height: 100vh;
+    min-height: 350px;
+    margin: 0;
+    position: fixed;
+    background-color: #111;
+    background-position: center center;
+    background-size: 120vw 120vh;
+    z-index: -1;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
 }
 
 .icon {
@@ -127,12 +172,14 @@ section h2 {
 }
 
 footer, nav {
-    background-color: rgb(15,12,41, 0.90);
+    background-color: rgb(15,12,41, 0.8);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 footer {
     bottom: 0;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 hr {
