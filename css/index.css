@@ -1,25 +1,23 @@
-/*
-https://uigradients.com/#Lawrencium
-*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Source+Code+Pro&display=swap');
 
 :root {
     --color-scheme: light dark;
 
-    --text-main: #eee0e7;
+    --dark-text-color: #222222;
+    --mid-text-color: #484848;
+    --light-text-color: #e2e2e2;
 
-    /*
-    --bg-main: #1C1D21;
-    --bg-body: #1c1d21a9;
-    */
-    --bg-main: #1C1D21;
-    --bg-body: #1c1d21a9;
+    --light-main-color: #FAF9F9;
+    --dark-main-color: #555B6E;
 
-    --mid-size: 20px;
+    --link-main: #559693;
+    --link-hover: #597a78;
+
+    --color-1: #89B0AE;
+    --color-2: #BEE3DB;
+    --color-3: #FFD6BA;
 }
 
-html,
 body {
     padding: 0;
     margin: 0;
@@ -27,224 +25,91 @@ body {
     width: 100%;
     overflow-x: hidden;
 
-    font-size: 18px;
+    font-size: 16px;
     text-rendering: optimizeLegibility;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Source Code Pro', monospace;
 
-    color: var(--text-main);
-    /*background-color: var(--bg-body);*/
+    color: var(--dark-text-color);
+    /*background-color: var(--light-main-color);*/
 
-    background: rgb(15,12,41,0.7);
-    background: -moz-linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
-    background: linear-gradient(135deg, rgba(15,12,41,0.7) 0%, rgba(48,43,99,0.7) 48%, rgba(36,36,62,0.7) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0c29",endColorstr="#24243e",GradientType=1);
+    background-color: var(--light-main-color);
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
 }
 
-p {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.378);
-}
-
-#profile-img {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7) inset;
-    border-radius: 15%;
-    width: 132px;
-}
-
-#email {
-    font-weight: bold;
-    font-size: var(--mid-size);
-}
-
-#name {
-    font-size: 49px;
-    letter-spacing: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 42px;
-}
-
-#hire-me-btn {
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgb(40, 40, 40);
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    vertical-align: center; 
-    transition: all 0.5s;
-}
-
-#hire-me-btn:hover {
-    width: 200px !important;
-    height: 200px !important;
-    bottom: 25px !important;
-    right: 25px !important;
-    font-size: 32px !important;
-    box-shadow: 0 0 100px rgb(40, 40, 40) !important;
-}
-
-#bg-abstract {
-    background: url("../img/bgs/abstract.gif");
-    width: 100vw;
-    height: 100vh;
-    min-height: 350px;
-    margin: 0;
-    position: fixed;
-    background-color: #111;
-    background-position: center center;
-    background-size: 120vw 120vh;
-    z-index: -1;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-}
-
-.icon {
-    margin: 23px 16px 23px 16px;
-    text-shadow: 0 0 10px #000f089e;
-    font-size: 36px;
-}
-
-.icon:hover,
-.icon:active {
-    text-decoration: none !important;
-}
-
-.nav-link {
-    font-size: var(--mid-size);
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.project-li {
-    margin-top: 70px;
-}
-
-.project-name {
-    font-size: var(--mid-size);
-    font-weight: bold;
-}
-
-.project-more {
-    color: #777;
-}
-
-.project-info {
-    color: #999;
-}
-
-a {
-    color: rgb(255, 255, 255);
-    transition: all 0.5s;
-}
-
-a:hover {
-    color: rgb(192, 192, 192);
-}
-
-nav {
-    width: 100%;
-    position: absolute !important;
-}
-
-section {
-    margin: 200px;
-    /*background-color: #1c1d2146;*/
-    border-radius: 20px;
-    text-align: center;
-    padding: 150px 250px 150px 250px;
-}
-
-section h2 {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2px;
-}
-
-footer, nav {
-    background-color: rgb(15,12,41, 0.8);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
-}
-
-footer {
-    bottom: 0;
-    padding-left: 150px;
-    padding-right: 150px;
+main {
+    padding: 100px 20px 50px 20px;
 }
 
 hr {
     height: 3px;
     width: 250px;
-    background-color: #ffffffbb !important;
+    background-color: #555B6Ebb !important;
 }
 
-@media screen and (max-width: 1500px) {
-    section {
-        margin: 100px !important;
+section {
+    margin-bottom: 150px;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 42px;
+}
+
+header {
+    margin-bottom: 42px;
+}
+
+a {
+    color: var(--link-main);
+}
+
+a:hover,
+a:active,
+a::after {
+    color: var(--link-hover);
+}
+
+#name,
+section h2,
+section h3 {
+    color: #4e4b65;
+}
+
+section > p > span {
+    color: var(--mid-main-color);
+}
+
+nav {
+    width: 100%;
+    position: fixed !important;
+    background-color: #FAF9F9 !important;
+    box-shadow: 0px 5px 10px rgba(127, 127, 127, 0.27);
+    z-index: 100;
+}
+
+#name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    letter-spacing: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        padding: 40px 5px 40px 5px !important;
     }
-}
 
-@media screen and (max-width: 1200px) {
-    section {
-        margin: 50px !important;
-        padding: 150px 75px 150px 75px !important;
-    }
-}
-
-@media screen and (max-width: 992px) {
     #name {
         font-size: 35px !important;
-        letter-spacing: 8px !important;
+        margin-bottom: 100px !important;
     }
-
-    section h2 {
-        letter-spacing: 0px !important;
-    }    
 
     section {
-        margin: 0px !important;
-        padding: 150px 25px 150px 25px !important;
+        margin-bottom: 50px !important;
     }
-
-    header {
-        display: none;
-    }
-
-    footer {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }    
-
-    #hire-me-btn {
-        height: 75px !important;
-        width: 75px !important;
-        bottom: none !important;
-        top: 10px !important;
-        right: 10px !important;
-        font-size: 16px !important;
-    }
-
-    #hire-me-btn:hover {
-        height: 75px !important;
-        width: 75px !important;
-        bottom: none !important;
-        top: 10px !important;
-        right: 10px !important;
-        font-size: 16px !important;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-
 }
