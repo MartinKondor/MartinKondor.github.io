@@ -19,6 +19,7 @@ section {
     --light-text-color: #e2e2e2;
     --light-main-color: #FAF9F9;
     --dark-main-color: #555B6E;
+    --dark-main-hover-color: #333847;
     --link-main: #559693;
     --link-hover: #597a78;
     --color-1: #89B0AE;
@@ -76,8 +77,12 @@ section h3 {
     color: #4e4b65;
 }
 
-section>p>span {
+section p span.font-weight-bold {
     color: var(--mid-main-color);
+}
+
+section div.row div.col-sm p {
+    margin-top: 42px;
 }
 
 nav {
@@ -85,6 +90,10 @@ nav {
     background-color: var(--light-main-color) !important;
     box-shadow: 0 5px 10px rgba(127, 127, 127, .27);
     z-index: 100;
+}
+
+#reddit-alert {
+    display: none;
 }
 
 #name {
@@ -95,9 +104,42 @@ nav {
     text-transform: uppercase;
 }
 
+#name-description {
+    color: rgb(142, 142, 142);
+    font-size: 18px;
+}
+
+#contact a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: var(--dark-main-color);
+    border-radius: 1px;
+    transition: background-color 0.3s ease;
+}
+
+#contact a:hover {
+    background-color: var(--dark-main-hover-color);
+}
+
+.mobile-only {
+    display: none;
+}
+
 @media only screen and (max-width:1200px) {
     main {
         padding: 140px 5px 5px 5px !important;
+    }
+
+    section {
+        margin-bottom: 50px !important;
+    }
+
+    section div.row div.col-sm p {
+        margin-top: 21px;
     }
 
     #name {
@@ -105,7 +147,12 @@ nav {
         margin-bottom: 100px !important;
     }
 
-    section {
-        margin-bottom: 50px !important;
+    #contact a {
+        padding: 20px 30px;
+        font-size: larger;
+    }
+
+    .mobile-only {
+        display: block;
     }
 }

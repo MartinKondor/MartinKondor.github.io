@@ -42,4 +42,8 @@
 
     // $("#free-counter").css("display", "none");
 
+    if (document.referrer.toLowerCase().includes("reddit")) {
+        $("#reddit-alert").css("display", "block");
+    }
+
 })(jQuery);
