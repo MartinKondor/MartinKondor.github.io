@@ -19,17 +19,19 @@
       <link rel="icon" sizes="115x93" href="img/logo-w.jpg">
       <link rel="shortcut icon" sizes="115x93" href="img/logo-w.jpg">
       <link rel="apple-touch-icon" sizes="115x93" href="img/logo-w.jpg">
-      <meta name="color-scheme" content="dark light">
+      <meta name="color-scheme" content="light dark">
       <title>Martin Kondor</title>
       <link rel="stylesheet" href="lib/css/fontawesome-all.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="lib/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/index.css">
       <link rel="stylesheet" href="css/bg.css">
    </head>
    <body class="text-center">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+
       <nav class="navbar navbar-expand-lg navbar-light">
          <div class="collapse navbar-collapse justify-content-center">
             <div class="navbar-nav text-uppercase"> <a class="nav-item nav-link" href="#"> <i
@@ -37,7 +39,9 @@
                class="nav-item nav-link text-uppercase" href="#side-projects"> <i class="fas fa-globe"></i>
                side-projects </a> <a class="nav-item nav-link text-uppercase" href="#resume"> <i
                   class="fas fa-file"></i> resume </a> <a class="nav-item nav-link text-uppercase"
-                  href="#research"> <i class="fas fa-flask"></i> research </a> <a class="nav-item nav-link"
+                  href="#research"> <i class="fas fa-flask"></i> research </a>
+                  <a class="nav-item nav-link" href="#patents"> <i class="fas fa-lightbulb text-uppercase"></i> patents </a> 
+                  <a class="nav-item nav-link"
                   href="#contact"> <i class="fas fa-address-book text-uppercase"></i> contact </a> 
             </div>
          </div>
@@ -53,18 +57,70 @@
          ITS AN IMPERSONALIZATION OF ME, AND A POSSIBLE SCAMMER
          <br>
          </div>
+
          <header>
+            <!--
+            <a href="https://www.linkedin.com/in/martin-kondor-7317a5198/" target="_blank">
+               <img src="img/linkedin.png" alt="LinkedIn profile">
+            </a>
+            <br>
+            -->
+            
             <div id="name-description" class="text-uppercase text-center">
-                <span>Software developer,</span>
+                <span>Software Developer,</span>
                 <br>
-                <span>Machine Learning & Back-end Engineer,</span>
+                <span>Machine Learning & Backend Engineer,</span>
             </div>
+
             <br>
             <h1 id="name" class="text-uppercase font-weight-bold">Martin Kondor</h1>
          </header>
          <section id="side-projects">
             <h2 class="font-weight-bold mb-4 mt-5 text-uppercase"> <i class="fas fa-image"></i> portfolio </h2>
             <hr>
+
+            <div class="row">
+               <div class="col-sm">
+                  <h3 class="font-weight-bold text-uppercase mt-5 mb-4"> <i class="fas fa-coffee"></i> Java </h3>
+                  <p class="mb-4">
+                     <span class="font-weight-bold">
+                        <span class="lang-uni-tdk-name">
+                           TextShareApp
+                        </span>
+                     </span>
+                     <br>
+                     <i class="text-muted">(under construction)</i>
+                     <br>
+                     <span class="text-muted">
+                        <span class="lang-uni-tdk">
+                           Android application for my TextShare project.
+                        </span>
+                     </span>
+                     <br>
+                     <a class="project-more" href="https://github.com/MartinKondor/TextShareApp" target="_blank">[more]</a>
+                  </p>
+
+                  <p class="mb-4">
+                     <span class="font-weight-bold">
+                        <span class="lang-uni-tdk-name">
+                           TextShare
+                        </span>
+                     </span>
+                     <br>
+                     <i class="text-muted">(under construction)</i>
+                     <br>
+                     <span class="text-muted">
+                        <span class="lang-uni-tdk">
+                           Platform to share &amp; up- or down-vote Texts.
+                           <br>
+                           Built with: Java-Spring, SQL, Maven, Postman, React
+                        </span>
+                     </span>
+                     <br>
+                     <a class="project-more" href="https://github.com/MartinKondor/TextShare" target="_blank">[more]</a>
+                  </p>
+               </div>
+            </div>
 
             <div class="row">
                <div class="col-sm">
@@ -225,6 +281,19 @@
          <section id="research">
             <h2 class="font-weight-bold mb-4 mt-5 text-uppercase"> <i class="fas fa-flask"></i> research </h2>
             <hr>
+            <p class="mb-4">
+               <span class="font-weight-bold">
+                  <span>Efficient Models for Fake News Detection: Hungarian and Multilingual Perspectives</span>
+               </span>
+               <br>
+               <span class="text-muted">
+                  <span>ACM Transactions on Asian and Low-Resource Language Information Processing,</span>
+                  <br>
+                  <span>With Dr. Szilárd Jaskó - University Of Pannonia</span>
+               </span>
+               <br>
+               <span class="text-muted">2023 sep. (under review)</span> 
+            </p>
             <p class="mb-4"> <span class="font-weight-bold"> <span class="lang-uni-tdk-name">Hungarian fake news
                detection using neural networks</span> </span> <br><span class="text-muted"> <span
                   class="lang-uni-tdk">Faculty Scientific Student Circle (TDK)</span>, <span
@@ -233,6 +302,23 @@
                <br><span class="text-muted"> 2023 apr. </span> 
             </p>
          </section>
+
+         <section id="patents">
+            <h2 class="font-weight-bold mb-4 mt-5 text-uppercase"> <i class="fas fa-lightbulb"></i> patents </h2>
+            <hr>
+            <p class="mb-4">
+               <span class="font-weight-bold">
+                  <span>GENERATIVE AI WORKFLOW SERVICE TO CUSTOMER MATCHING</span>
+               </span>
+               <br>
+               <span class="text-muted">
+                  <span>With Alan Harris, Ankur Patel, Derek Allar, Jerry Castanos, Lucy Tai, Tri Nguyen</span>
+               </span>
+               <br>
+               <span class="text-muted">2023 dec. (pending)</span> 
+            </p>
+         </section>
+
          <section id="contact">
             <h2 class="font-weight-bold mb-4 mt-5 text-uppercase lang-contact"> <i class="fas fa-address-book"></i>
                contact 

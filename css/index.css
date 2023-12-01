@@ -3,8 +3,7 @@
 body,
 nav {
     width: 100%;
-    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
-    background-size: 100% 1.2em
+    background-size: 100% 1.2em;
 }
 
 #name,
@@ -87,7 +86,7 @@ section div.row div.col-sm p {
 
 nav {
     position: fixed !important;
-    background-color: var(--light-main-color) !important;
+    background-color: hsla(0, 9%, 98%, 0.8) !important;
     box-shadow: 0 5px 10px rgba(127, 127, 127, .27);
     z-index: 100;
 }
