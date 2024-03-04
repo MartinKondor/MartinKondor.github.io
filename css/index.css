@@ -85,7 +85,7 @@ section div.row div.col-sm p {
 }
 
 nav {
-    position: fixed !important;
+    /*position: fixed !important;*/
     background-color: hsla(0, 9%, 98%, 0.8) !important;
     box-shadow: 0 5px 10px rgba(127, 127, 127, .27);
     z-index: 100;
