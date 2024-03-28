@@ -1,49 +1,34 @@
 (function ($) {
 
-    function setTitle() {
-        if (titleSwitch) $("title").html("I am Martin Kondor");
-        else $("title").html("👋 Hi!");
-        titleSwitch = !titleSwitch;
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        // Toggle dark mode class on body
+        $('body').toggleClass('dark-mode');
+
+        if ($('body').hasClass('dark-mode')) {
+            $("#logo").attr("src", "img/logo.jpg");
+        }
+        else {
+            $("#logo").attr("src", "img/logo-w.jpg");
+        }
+
+        // Save dark mode preference in local storage
+        localStorage.setItem('darkMode', $('body').hasClass('dark-mode'));
     }
 
-    function setUserLang(userLang) {
-        let huText = {
-            "lang-uni-major": "Mérnökinformatikus BSc",
-            "lang-uni-name": "Pannon Egyetem",
-            "lang-uni-tdk": "TDK",
-            "lang-uni-tdk-name": "Magyar nyelvű álhírek felismerése mély neurális hálózattal",
-            "lang-uni-tdk-desc": "2. helyezés",
-            //"lang-contact": "Kapcsolat",
-            //"lang-research": "Kutatás",
-            //"lang-edu": "Tanulmányok",
-            //"lang-exp": "Tapasztalat",
-            //"lang-lang": "Nyelvek",
-        };
-    
-        // Change html according to language
-        if (userLang.toLowerCase() === "hu-hu") {
-            for (let key of Object.keys(huText)) {
-                $("." + key).html(huText[key]);
-            }
-        }
+    // Check if dark mode preference is saved in local storage
+    var darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'true') {
+        $('body').addClass('dark-mode');
     }
-    
-    // Set user lang by hand
-    // $("#english-lang").on("click", function (e) {setUserLang("en");});
+
+    // Dark mode button click event
+    $('#lightModeBtn').click(function(e) {
+        e.preventDefault();
+        toggleDarkMode();
+    });
 
     // Update copyright
     $('#copyright').html(new String(new Date().getFullYear()));
-
-    let titleSwitch = false;
-    //setInterval(setTitle, 2000);
-
-    // Set user language
-    // setUserLang(navigator.language || navigator.userLanguage);
-
-    // $("#free-counter").css("display", "none");
-
-    if (document.referrer.toLowerCase().includes("reddit")) {
-        $("#reddit-alert").css("display", "block");
-    }
 
 })(jQuery);
