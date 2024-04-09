@@ -1,6 +1,10 @@
 import os
-import logging
+import minify_html
 from bs4 import BeautifulSoup
+
+
+def clean_content(html_content):
+    return minify_html.minify(html_content, minify_js=True, remove_processing_instructions=True)
 
 
 html_sources = {
@@ -49,6 +53,6 @@ for html_file, html_content in html_bin.items():
 
     new_file_path = "docs/" + html_file
     with open(new_file_path, "w+") as file:
-        file.write(html_content)
+        file.write(clean_content(html_content))
 
     print("Created file:", new_file_path)
