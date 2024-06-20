@@ -20,5 +20,4 @@ while True:
 
 
     # Sleep for a short interval before checking again
-    time.sleep(2)
-
+    time.sleep(2.5)
