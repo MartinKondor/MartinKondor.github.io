@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 interface MousePosition {
   x: number;
@@ -81,9 +82,11 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white overflow-hidden flex flex-col">
-      {/* Animated background */}
+      <AnimatedBackground />
+
+      {/* Animated gradient background */}
       <div
-        className="fixed inset-0 pointer-events-none"
+        className="fixed inset-0 pointer-events-none z-10"
         style={{
           background: `radial-gradient(${getGradientShape()} at ${
             mousePosition.x
@@ -107,7 +110,7 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <motion.section
-        className="h-screen flex flex-col justify-center items-center relative"
+        className="h-screen flex flex-col justify-center items-center relative z-20"
         style={{ opacity }}
       >
         <motion.div
@@ -154,7 +157,7 @@ const HomePage = () => {
       </motion.section>
 
       {/* Main content */}
-      <main className="container mx-auto px-4 py-10 relative z-10 flex-grow">
+      <main className="container mx-auto px-4 py-10 relative z-20 flex-grow">
         <motion.section
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
