@@ -26,16 +26,18 @@ jobs:
 
       - name: Setup Pages ⚙️
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
-        env:
-          NEXT_CONFIG_FILE: next.config.mjs
+
+      - name: Prepare Next.js config
+        run: |
+          echo "const baseConfig = require('./next.config.js');" > temp-next-config.js
+          echo "const pagesConfig = { images: { unoptimized: true }, basePath: process.env.NEXT_PUBLIC_BASE_PATH || '' };" >> temp-next-config.js
+          echo "module.exports = { ...baseConfig, ...pagesConfig };" >> temp-next-config.js
+          mv temp-next-config.js next.config.js
 
       - name: Build with Next.js 🏗️
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH }}
-          NEXT_CONFIG_FILE: next.config.mjs
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
