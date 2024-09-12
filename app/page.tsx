@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
@@ -30,13 +31,17 @@ const HomePage = () => {
     timestamp: Date.now(),
   });
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isNameSticky, setIsNameSticky] = useState(false);
 
-  const { scrollYProgress } = useScroll();
+  const { scrollY, scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const springScrollYProgress = useSpring(scrollYProgress, {
     stiffness: 300,
     damping: 40,
   });
+
+  const namePosition = useTransform(scrollY, [0, 200], ["50%", "0%"]);
+  const nameScale = useTransform(scrollY, [0, 200], [1, 0.6]);
 
   const handleMouseMove = useCallback(
     (e: MouseEvent) => {
@@ -56,6 +61,7 @@ const HomePage = () => {
     window.addEventListener("mousemove", handleMouseMove);
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 300);
+      setIsNameSticky(window.scrollY > 200);
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -82,7 +88,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white overflow-hidden flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 overflow-hidden flex flex-col">
       <AnimatedBackground />
 
       {/* Animated gradient background */}
@@ -109,9 +115,26 @@ const HomePage = () => {
         }}
       />
 
+      {/* Sticky Name Navbar */}
+      <motion.div
+        className={`fixed left-0 right-0 w-full z-50 flex justify-center items-center transition-all duration-300 rounded-xl ${
+          isNameSticky
+            ? "top-0 bg-gray-900/90 backdrop-blur-sm py-4"
+            : "top-0 bg-transparent h-0 overflow-hidden"
+        }`}
+        style={{
+          y: namePosition,
+          scale: nameScale,
+        }}
+      >
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-green-400 whitespace-nowrap">
+          Martin Kondor
+        </h1>
+      </motion.div>
+
       {/* Hero Section */}
       <motion.section
-        className="h-screen flex flex-col justify-center items-center relative z-20"
+        className="h-screen flex flex-col justify-center items-center relative z-20 px-4"
         style={{ opacity }}
       >
         <motion.div
@@ -123,15 +146,17 @@ const HomePage = () => {
           <img
             src="https://avatars.githubusercontent.com/u/25453575?v=4"
             alt="Martin Kondor"
-            className="rounded-full w-40 h-40 object-cover border-4 border-green-500"
+            className="rounded-full w-32 h-32 sm:w-40 sm:h-40 object-cover border-4 border-green-400 shadow-lg"
           />
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-6xl font-bold mb-4"
-          whileHover={{ scale: 1.05, color: "#10B981" }}
+          className="text-4xl sm:text-6xl font-bold mb-4 text-center text-green-300"
+          style={{
+            opacity: useTransform(scrollY, [0, 200], [1, 0]),
+          }}
         >
           Martin Kondor
         </motion.h1>
@@ -139,8 +164,8 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="text-2xl mb-8"
-          whileHover={{ scale: 1.05, color: "#10B981" }}
+          className="text-xl sm:text-2xl mb-8 text-center text-gray-300"
+          whileHover={{ scale: 1.05, color: "#4ADE80" }}
         >
           AI & Full-stack Developer
         </motion.h2>
@@ -148,8 +173,8 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
-          className="bg-green-500 text-white font-bold py-2 px-4 rounded-full transition duration-300"
-          whileHover={{ scale: 1.1, backgroundColor: "#059669" }}
+          className="bg-green-500 text-gray-900 font-bold py-3 px-6 rounded-full transition duration-300 shadow-lg"
+          whileHover={{ scale: 1.1, backgroundColor: "#4ADE80" }}
           whileTap={{ scale: 0.95 }}
           onClick={scrollToContent}
         >
@@ -163,7 +188,7 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="mt-52 mb-52"
+          className="mt-20 sm:mt-40 mb-20 sm:mb-40"
         >
           <About />
         </motion.section>
@@ -172,7 +197,7 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="mt-52 mb-52"
+          className="mt-20 sm:mt-40 mb-20 sm:mb-40"
         >
           <Projects />
         </motion.section>
@@ -181,7 +206,7 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="mt-52 mb-52"
+          className="mt-20 sm:mt-40 mb-20 sm:mb-40"
         >
           <Experience />
         </motion.section>
@@ -190,7 +215,7 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="mt-52 mb-52"
+          className="mt-20 sm:mt-40 mb-20 sm:mb-40"
         >
           <Education />
         </motion.section>
@@ -198,19 +223,19 @@ const HomePage = () => {
 
       {/* Scroll to top button */}
       <motion.button
-        className="fixed bottom-8 right-8 bg-green-500 text-white p-3 rounded-full shadow-lg z-50"
+        className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 bg-green-500 text-gray-900 p-4 rounded-full shadow-lg z-50"
         onClick={scrollToTop}
         initial={{ opacity: 0 }}
         animate={{ opacity: showScrollTop ? 1 : 0 }}
-        whileHover={{ scale: 1.1, backgroundColor: "#059669" }}
+        whileHover={{ scale: 1.1, backgroundColor: "#4ADE80" }}
         whileTap={{ scale: 0.95 }}
       >
-        <FaArrowUp />
+        <FaArrowUp className="w-6 h-6" />
       </motion.button>
 
       {/* Scroll progress indicator */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-green-500 z-50"
+        className="fixed top-0 left-0 right-0 h-1 bg-green-400 z-50"
         style={{ scaleX: springScrollYProgress, transformOrigin: "0%" }}
       />
 

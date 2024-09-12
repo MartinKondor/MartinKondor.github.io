@@ -1,48 +1,40 @@
 "use client";
-import Link from "next/link";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-export default function Navbar() {
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-neutral-800 py-4 sticky top-0 z-10">
+    <motion.nav
+      className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ${
+        isScrolled ? "bg-gray-900 shadow-lg" : "bg-transparent"
+      }`}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-green-500">
-          MK
-        </Link>
-        <ul className="flex space-x-6">
-          <li>
-            <Link
-              href="#about"
-              className="hover:text-green-500 transition-colors"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#experience"
-              className="hover:text-green-500 transition-colors"
-            >
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#projects"
-              className="hover:text-green-500 transition-colors"
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#contact"
-              className="hover:text-green-500 transition-colors"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <motion.a
+          href="#"
+          className={`text-xl font-bold ${
+            isScrolled ? "text-green-500" : "text-white"
+          }`}
+          whileHover={{ scale: 1.05 }}
+        >
+          Martin Kondor
+        </motion.a>
       </div>
-    </nav>
+    </motion.nav>
   );
-}
+};
+
+export default Navbar;
