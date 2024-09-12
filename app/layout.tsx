@@ -16,7 +16,6 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Martin Kondor",
   description: "Martin Kondor",
-  icons: { icon: "/img/logo-w.png" }
 };
 
 export default function RootLayout({

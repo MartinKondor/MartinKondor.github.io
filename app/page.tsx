@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import AnimatedBackground from "./components/AnimatedBackground";
+import Education from "./components/Education";
 
 interface MousePosition {
   x: number;
@@ -183,6 +184,15 @@ const HomePage = () => {
           className="mt-52 mb-52"
         >
           <Experience />
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="mt-52 mb-52"
+        >
+          <Education />
         </motion.section>
       </main>
 

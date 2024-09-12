@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { cn } from "../../lib/utils";
 
 const experiences = [
   {
@@ -15,7 +16,7 @@ const experiences = [
     logo: "/img/company/zensetup.png",
     title: "Full-stack Developer",
     company: "Zensetup Lacontrol Kft.",
-    period: "Feb 2024 - Apr 2024",
+    period: "Feb 2024 - Apr 2023",
     description:
       "Developed and implemented diverse software solutions including control systems, PLCs, HMIs, desktop applications, REST APIs, web applications, and an in-house ERP system, demonstrating versatility across multiple programming languages and frameworks.",
   },
@@ -55,16 +56,20 @@ const ExperienceItem = ({
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-green-500 flex items-center justify-center m-2">
+      <div
+        className={
+          "flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center m-2 border-2 border-gray-500"
+        }
+      >
         <motion.img
           src={experience.logo}
           alt={experience.company}
-          className="w-8 h-8"
+          className="w-12 h-12 rounded-full"
           whileHover={{ scale: 1.2, rotate: 360 }}
           transition={{ duration: 0.3 }}
         />
       </div>
-      <div className="ml-4 flex-grow pb-8 border-l-2 border-green-500 pl-4 relative">
+      <div className="ml-4 flex-grow pb-8 border-l-2 border-gray-500 pl-4 relative">
         <motion.h3
           className="text-xl font-bold"
           whileHover={{ color: "#10B981", x: 5 }}
