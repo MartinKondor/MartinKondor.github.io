@@ -9,13 +9,13 @@ const experiences = [
     company: "Peak Financial Services",
     period: "Apr 2024 - Present",
     description:
-      "Participating in the development of innovative Fintech solutions and AI capabilities.",
+      "Participating in the development of innovative Fintech solutions and improving AI capabilities.",
   },
   {
     logo: "/img/company/zensetup.png",
     title: "Full-stack Developer",
     company: "Zensetup Lacontrol Kft.",
-    period: "Feb 2024 - Apr 2023",
+    period: "Feb 2024 - Apr 2024",
     description:
       "Developed and implemented diverse software solutions including control systems, PLCs, HMIs, desktop applications, REST APIs, web applications, and an in-house ERP system, demonstrating versatility across multiple programming languages and frameworks.",
   },
