@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 
@@ -11,25 +11,7 @@ import About from "./components/About";
 import AnimatedBackground from "./components/AnimatedBackground";
 import Education from "./components/Education";
 
-interface MousePosition {
-  x: number;
-  y: number;
-}
-
-interface MouseSpeed {
-  speed: number;
-  timestamp: number;
-}
-
 const HomePage = () => {
-  const [mousePosition, setMousePosition] = useState<MousePosition>({
-    x: 0,
-    y: 0,
-  });
-  const [mouseSpeed, setMouseSpeed] = useState<MouseSpeed>({
-    speed: 0,
-    timestamp: Date.now(),
-  });
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isNameSticky, setIsNameSticky] = useState(false);
 
@@ -43,22 +25,7 @@ const HomePage = () => {
   const namePosition = useTransform(scrollY, [0, 200], ["50%", "0%"]);
   const nameScale = useTransform(scrollY, [0, 200], [1, 0.6]);
 
-  const handleMouseMove = useCallback(
-    (e: MouseEvent) => {
-      const now = Date.now();
-      const dt = now - mouseSpeed.timestamp;
-      const dx = e.clientX - mousePosition.x;
-      const dy = e.clientY - mousePosition.y;
-      const speed = Math.sqrt(dx * dx + dy * dy) / dt;
-
-      setMousePosition({ x: e.clientX, y: e.clientY });
-      setMouseSpeed({ speed, timestamp: now });
-    },
-    [mousePosition, mouseSpeed]
-  );
-
   useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 300);
       setIsNameSticky(window.scrollY > 200);
@@ -66,18 +33,9 @@ const HomePage = () => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleMouseMove]);
-
-  const getGradientShape = (): string => {
-    const baseSize = 200;
-    const sizeVariation = mouseSpeed.speed * 2;
-    const size1 = baseSize + sizeVariation;
-    const size2 = baseSize - sizeVariation;
-    return `${size1}px ${size2}px ${size2}px ${size1}px`;
-  };
+  }, []);
 
   const scrollToContent = () => {
     window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
@@ -91,35 +49,11 @@ const HomePage = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 overflow-hidden flex flex-col">
       <AnimatedBackground />
 
-      {/* Animated gradient background */}
-      <div
-        className="fixed inset-0 pointer-events-none z-10"
-        style={{
-          background: `radial-gradient(${getGradientShape()} at ${
-            mousePosition.x
-          }px ${mousePosition.y}px, rgba(16, 185, 129, 0.3), transparent)`,
-          transition: "all 0.3s ease-out",
-        }}
-      />
-
-      {/* Mouse shadow */}
-      <div
-        className="fixed w-20 h-20 rounded-full pointer-events-none z-50"
-        style={{
-          left: mousePosition.x - 40,
-          top: mousePosition.y - 40,
-          background:
-            "radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0) 70%)",
-          boxShadow: "0 0 20px 10px rgba(16, 185, 129, 0.1)",
-          transition: "all 0.1s ease-out",
-        }}
-      />
-
       {/* Sticky Name Navbar */}
       <motion.div
         className={`fixed left-0 right-0 w-full z-50 flex justify-center items-center transition-all duration-300 rounded-xl ${
           isNameSticky
-            ? "top-0 bg-gray-900/90 backdrop-blur-sm py-4"
+            ? "top-0 backdrop-blur-sm p-6"
             : "top-0 bg-transparent h-0 overflow-hidden"
         }`}
         style={{
@@ -178,7 +112,7 @@ const HomePage = () => {
           whileTap={{ scale: 0.95 }}
           onClick={scrollToContent}
         >
-          Explore My Work <FaArrowDown className="inline ml-2" />
+          <FaArrowDown className="inline" size={40} />
         </motion.button>
       </motion.section>
 

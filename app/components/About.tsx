@@ -4,42 +4,41 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 const skills = [
-  "AI",
-  "Machine Learning",
-  "Full-stack Development",
-  "Python",
-  "JavaScript/TypeScript",
-  "React",
-  "Node.js",
-  "Next.js",
-  "Docker",
+  "Generative AI solutions",
+  "ML algorithms",
+  "Full-stack Development - React, Node.js, Nest.js, Next.js",
+  "Python for scripting and automation",
+  "Git and GitHub for version control",
+  "Docker for containerization",
+  "Azure for cloud services",
+  "Software testing and debugging",
+  "Database management - PostgreSQL, MySQL, MongoDB",
+  "Jira for project management",
 ];
 
 const About = () => {
   return (
     <div className="mb-20">
-      <h2 className="text-3xl font-bold mb-6 text-green-400"># About Me</h2>
+      <h2 className="text-3xl font-bold mb-6 text-green-400">ABOUT</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-4">
-          <p className="text-gray-300 leading-relaxed">
-            As a Software Engineer with a strong background in AI and Full-stack
-            development, I&apos;m driven by the challenge of solving complex
-            problems and creating innovative solutions.
-          </p>
+          <p className="text-gray-300 leading-relaxed"></p>
           <TypeAnimation
             sequence={[
-              "My journey in tech has been marked by a constant pursuit of knowledge and a commitment to pushing the boundaries of what's possible.",
+              "With over 5 years of experience as a Software Engineer and a strong background in AI and Full-stack development, I'm driven by the challenge of solving complex problems and creating innovative solutions. My journey in tech has been marked by a constant pursuit of knowledge and a commitment to pushing the boundaries of what's possible.",
               1000,
             ]}
             wrapper="p"
-            speed={70}
+            speed={99}
             style={{ fontSize: "1em", display: "inline-block" }}
             repeat={Infinity}
-            className="text-green-300"
+            className="text-gray-300"
           />
         </div>
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-green-400">Skills</h3>
+          <h3 className="text-xl font-semibold mb-4 text-green-400">
+            SKILLS & EXPERIENCES
+          </h3>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill, index) => (
               <motion.span
