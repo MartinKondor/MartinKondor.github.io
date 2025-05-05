@@ -9,19 +9,19 @@ const experiences = [
     company: "Peak Financial Services",
     period: "Apr 2024 - Present",
     description:
-      "Participating in the development of innovative Fintech solutions and improving AI capabilities.",
+      "Participating in the development of innovative Fintech solutions and improving AI capabilities. Take part in the development of educational AI and RAG systems for various clients.",
   },
   {
     logo: "/img/company/zensetup.png",
-    title: "Full-stack Developer",
+    title: "Software & Control Systems Engineer",
     company: "Zensetup Lacontrol Kft.",
     period: "Feb 2024 - Apr 2024",
     description:
-      "Developed and implemented diverse software solutions including control systems, PLCs, HMIs, desktop applications, REST APIs, web applications, and an in-house ERP system, demonstrating versatility across multiple programming languages and frameworks.",
+      "Developed and implemented diverse software solutions including control systems, PLCs, HMIs, desktop applications, REST APIs & web applications for hardware control, and an in-house ERP system.",
   },
   {
     logo: "/img/company/standup.avif",
-    title: "ML & Backend Engineer",
+    title: "Machine Learning & Backend Engineer",
     company: "StandupAI (Growth Engine Inc.)",
     period: "Aug 2022 - Nov 2023",
     description:
@@ -29,9 +29,16 @@ const experiences = [
   },
   {
     logo: "/img/company/ie.png",
-    title: "Embedded Developer",
+    title: "Software Engineer Intern",
     company: "IndustrieElektrik GmbH",
-    period: "Jun 2018 - Aug 2020, Jun 2022 - Aug 2022",
+    period: "Jun 2022 - Aug 2022",
+    description: "Internship during my university studies.",
+  },
+  {
+    logo: "/img/company/ie.png",
+    title: "Software Engineer",
+    company: "IndustrieElektrik GmbH",
+    period: "Jun 2018 - Aug 2020",
     description:
       "Designed and developed embedded systems, showcasing versatility across different tech stacks.",
   },
@@ -86,7 +93,9 @@ const ExperienceItem = ({
 const Experience = () => {
   return (
     <div className="mb-20">
-      <h2 className="text-3xl font-bold mb-6 text-green-500"># Experience</h2>
+      <h2 className="text-3xl font-bold mb-6 text-green-400">
+        EXPERIENCES (5+ yrs)
+      </h2>
       <div className="relative">
         {experiences.map((experience, index) => (
           <ExperienceItem key={index} experience={experience} />

@@ -1,8 +1,15 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const projects = [
+  {
+    image: "/img/projects/minimal-rag.png",
+    title: "Minimal RAG NextJS",
+    description:
+      "Minimal RAG NextJS is a proof-of-concept demonstrating that you can implement Retrieval-Augmented Generation (RAG) without relying on expensive vector database subscriptions.",
+    technologies: ["AI", "RAG", "Frontend Development"],
+  },
   {
     image: "/img/projects/fn.png",
     title: "Efficient Fake News Detection Models",
@@ -14,15 +21,14 @@ const projects = [
     image: "/img/projects/standup.png",
     title: "Generative AI Workflow Service",
     description:
-      "Contributed to a patent-pending project for matching generative AI workflows to customers, demonstrating innovation in AI applications.",
-    technologies: ["AI", "Python", "Backend Development"],
-  },
-  {
-    image: "/img/projects/movie-rec.png",
-    title: "Movie Recommender",
-    description:
-      "Engineered a sophisticated movie recommendation engine that analyzes user preferences to suggest personalized film choices based on individual viewing history and taste profiles.",
-    technologies: ["AI", "Recommender Systems", "Frontend Development"],
+      "Earlier in the AI era, I contributed to a patent-pending project for matching Items to natural language Customer profile descriptions, demonstrating innovation in AI applications.",
+    technologies: [
+      "AI",
+      "Python",
+      "Backend Development",
+      "Keras",
+      "TensorFlow",
+    ],
   },
 ];
 
@@ -36,7 +42,7 @@ const ProjectCard = ({
     technologies: string[];
   };
 }) => {
-  const [isFlipped, setIsFlipped] = React.useState(false);
+  const [isFlipped, setIsFlipped] = useState<boolean>(false);
 
   return (
     <motion.div
@@ -81,7 +87,7 @@ const Projects = () => {
 
   return (
     <div className="mb-20">
-      <h2 className="text-3xl font-bold mb-6 text-green-500"># Projects</h2>
+      <h2 className="text-3xl font-bold mb-6 text-green-400">PROJECTS</h2>
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         style={{ y }}
