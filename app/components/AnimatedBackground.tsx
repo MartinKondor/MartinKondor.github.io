@@ -4,18 +4,21 @@ import { motion } from "framer-motion";
 const AnimatedBackground = () => {
   const generateRandomWaves = (count: number) => {
     const waves = [];
+    const colors = ["204, 134, 51", "134, 51, 204", "51, 204, 134"];
+
     for (let i = 0; i < count; i++) {
+      const color = colors[Math.floor(Math.random() * colors.length)];
       waves.push({
         y: Math.random() * 1000,
         duration: Math.random() * 20 + 10, // 10 to 30 seconds
-        color: `rgba(16, 185, 129, ${Math.random() * 0.15 + 0.02})`, // 0.02 to 0.17 opacity
+        color: `rgba(${color}, ${Math.random() * 0.15 + 0.02})`,
         amplitude: Math.random() * 100 + 50, // 50 to 150 pixels
       });
     }
     return waves.sort((a, b) => a.y - b.y); // Sort by y to ensure proper layering
   };
 
-  const waves = useMemo(() => generateRandomWaves(20), []); // Generate 20 random waves
+  const waves = useMemo(() => generateRandomWaves(20), []);
 
   return (
     <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">

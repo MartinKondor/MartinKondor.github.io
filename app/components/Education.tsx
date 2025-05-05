@@ -69,7 +69,7 @@ const EducationItem = ({
 const Education = () => {
   return (
     <div className="mb-20">
-      <h2 className="text-3xl font-bold mb-6 text-green-500"># Education</h2>
+      <h2 className="text-3xl font-bold mb-6 text-green-500">EDUCATION</h2>
       <div className="relative">
         {educations.map((experience, index) => (
           <EducationItem key={index} experience={experience} />
