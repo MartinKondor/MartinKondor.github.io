@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { FaUser } from "react-icons/fa";
 
 const skills = [
   "Generative AI solutions",
