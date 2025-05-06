@@ -45,6 +45,9 @@ const HomePage = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const nameClassName =
+    "text-3xl sm:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text whitespace-nowrap inline-block bg-gradient-to-r from-[#10B981] via-[#10B981] via-49% to-[#10B981]";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 overflow-hidden flex flex-col">
       <AnimatedBackground />
@@ -53,7 +56,7 @@ const HomePage = () => {
       <motion.div
         className={`fixed left-0 right-0 w-full z-50 flex justify-center items-center transition-all duration-300 rounded-xl ${
           isNameSticky
-            ? "top-0 backdrop-blur-sm p-6"
+            ? "top-0 p-6"
             : "top-0 bg-transparent h-0 overflow-hidden"
         }`}
         style={{
@@ -61,9 +64,7 @@ const HomePage = () => {
           scale: nameScale,
         }}
       >
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-green-400 whitespace-nowrap">
-          Martin Kondor
-        </h1>
+        <h1 className={nameClassName}>Martin Kondor</h1>
       </motion.div>
 
       {/* Hero Section */}
@@ -87,7 +88,7 @@ const HomePage = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl sm:text-6xl font-bold mb-4 text-center text-green-300"
+          className={nameClassName}
           style={{
             opacity: useTransform(scrollY, [0, 200], [1, 0]),
           }}

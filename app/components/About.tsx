@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import { FaUser } from "react-icons/fa";
 
 const skills = [
   "Generative AI solutions",
@@ -25,11 +26,13 @@ const About = () => {
           <p className="text-gray-300 leading-relaxed"></p>
           <TypeAnimation
             sequence={[
-              "With over 5 years of experience as a Software Engineer and a strong background in AI and Full-stack development, I'm driven by the challenge of solving complex problems and creating innovative solutions. My journey in tech has been marked by a constant pursuit of knowledge and a commitment to pushing the boundaries of what's possible.",
-              1000,
+              "With over 5 years of experience as a Software Engineer and a strong background in AI and Full-stack development, I'm driven by the challenge of solving complex problems and creating innovative solutions.",
+              5900,
+              "My journey in tech has been marked by a constant pursuit of knowledge and a commitment to pushing the boundaries of what's possible.",
+              5000,
             ]}
             wrapper="p"
-            speed={99}
+            speed={80}
             style={{ fontSize: "1em", display: "inline-block" }}
             repeat={Infinity}
             className="text-gray-300"
