@@ -1,11 +1,22 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaStackOverflow,
+  FaCode,
+} from "react-icons/fa";
 
 const socialLinks = [
   { icon: FaGithub, url: "https://github.com/MartinKondor" },
   { icon: FaLinkedin, url: "https://www.linkedin.com/in/martin-kondor" },
+  {
+    icon: FaStackOverflow,
+    url: "https://stackoverflow.com/users/9160124/martinkondor",
+  },
+  { icon: FaCode, url: "https://www.codewars.com/users/MartinKondor" },
   { icon: FaEnvelope, url: "mailto:martinkondor@gmail.com" },
 ];
 
